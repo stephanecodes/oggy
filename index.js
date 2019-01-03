@@ -295,7 +295,7 @@ module.exports = (options = {}) => {
 
 	// Scrape one url
 	const scrape = async (url, scrapeOptions) => {
-		const promise = new Promise((resolve, reject) => {
+		try {
 			let time = Date.now(); // Start timer
 
 			assertUrlIsNotMalformed(url);
@@ -307,7 +307,7 @@ module.exports = (options = {}) => {
 
 			let context = {url: urlObject, userContext};
 
-			oggyGot(urlObject, {
+			const res = await oggyGot(urlObject, {
 				timeout: oggyOptions.requestTimeout,
 				headers: oggyOptions.headers || {},
 				hooks: {
@@ -322,42 +322,35 @@ module.exports = (options = {}) => {
 						}
 					]
 				}
-			}).then(res => {
-				assertContentTypeIsAllowed(res.headers['content-type']);
+			});
 
-				const body = res.body || '';
-				const parsedData = parseData(body, urlObject);
-				// Console.log(JSON.stringify(data, null, 2))
-				let metadata = buildMetadata(parsedData, urlObject);
+			assertContentTypeIsAllowed(res.headers['content-type']);
 
-				oggyHooks.forEach(hook => {
-					if (hook.afterScrapeUrl) {
-						context = {...context, body, parsedData, responseHeaders: res.headers};
-						hook.afterScrapeUrl(metadata, context);
-					}
-				});
+			const body = res.body || '';
+			const parsedData = parseData(body, urlObject);
+			// Console.log(JSON.stringify(data, null, 2))
+			let metadata = buildMetadata(parsedData, urlObject);
 
-				metadata = cleanupMetadata(metadata);
+			oggyHooks.forEach(hook => {
+				if (hook.afterScrapeUrl) {
+					context = {...context, body, parsedData, responseHeaders: res.headers};
+					hook.afterScrapeUrl(metadata, context);
+				}
+			});
 
-				assertMetadataComplete(metadata);
+			metadata = cleanupMetadata(metadata);
 
-				time = Date.now() - time; // Stop timer
+			assertMetadataComplete(metadata);
 
-				resolve(oggyOptions.parsedData === true ?
-					{metadata, parsedData, time} :
-					{metadata, time}
-				);
-			}).catch(err => reject(err));
-		});
+			time = Date.now() - time; // Stop timer
 
-		return Promise.resolve(promise).then(
-			res => {
-				return {initialUrl: url, ...res};
-			},
-			err => {
-				return {initialUrl: url, error: {message: err.message}};
+			if (oggyOptions.parsedData === true) {
+				return {initialUrl: url, metadata, parseData, time};
 			}
-		);
+			return {initialUrl: url, metadata, time};
+		} catch (err) {
+			return {initialUrl: url, error: {message: err.message}};
+		}
 	};
 
 	// Scrape multiple urls
