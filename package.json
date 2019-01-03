@@ -1,7 +1,7 @@
 {
 	"name": "oggy",
 	"version": "0.0.0",
-	"description": "Open Graph, Twitter and meta data scraper",
+	"description": "Scrape Open Graph, Twitter and other metadata easily",
 	"license": "MIT",
 	"repository": "stephanecodes/oggy",
 	"author": {
@@ -9,17 +9,23 @@
 		"url": "https://stephanecodes.github.io/"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": ">=8.6"
 	},
 	"scripts": {
-		"test": "xo && nyc --reporter=html --reporter=text ava --verbose"
+		"test": "xo && ava"
 	},
 	"files": [
 		"index.js"
 	],
 	"keywords": [
-		"Open Graph",
-		"Scrapper"
+		"open graph",
+		"open",
+		"graph",
+		"opengraph",
+		"og",
+		"twitter",
+		"twitter cards",
+		"scraper"
 	],
 	"dependencies": {
 		"entities": "^1.1.2",
@@ -29,6 +35,7 @@
 	},
 	"devDependencies": {
 		"ava": "^0.25.0",
+		"coveralls": "^3.0.2",
 		"nock": "^10.0.4",
 		"nyc": "^13.1.0",
 		"xo": "^0.21.0"
