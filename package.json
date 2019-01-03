@@ -1,7 +1,7 @@
 {
 	"name": "oggy",
 	"version": "0.0.0",
-	"description": "Scrape Open Graph, Twitter and other metadata easily",
+	"description": "Scrape and fusion Open Graph, Twitter and other DOM metadata easily",
 	"license": "MIT",
 	"repository": "stephanecodes/oggy",
 	"author": {
