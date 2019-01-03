@@ -1,0 +1,34 @@
+{
+  "initialUrl": "https://www.tiktok.com/",
+  "metadata": {
+    "title": "TikTok - video social network",
+    "description": "TikTok is a destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos.",
+    "siteName": "tiktok.com",
+    "image": "http://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/logo_icon_v2_40f12f4.png",
+    "url": "https://www.tiktok.com/",
+    "type": "website",
+    "icon": "https://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/favicon_v2_7145ff0.ico"
+  },
+  "parsedData": {
+    "og": {
+      "type": "website",
+      "title": "TikTok - video social network",
+      "description": "TikTok is a destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos.",
+      "image": "http://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/logo_icon_v2_40f12f4.png",
+      "url": "https://www.tiktok.com/"
+    },
+    "twitter": {},
+    "other_meta": {
+      "baiduspider": "noarchive",
+      "google-site-verification": "u4UMw2Yaw9Z-vvhbuC8Fzh2adtV3jqudeCVAjcGSTpo",
+      "keywords": "TikTok, Tik Tok, musically, mobile video, short-form video",
+      "description": "TikTok is the destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos.",
+      "naver-site-verification": "294af4876c1c2ff0109e094f9051b61813066fc8"
+    },
+    "misc": {
+      "title": "TikTok - Make Every Second Count",
+      "icon": "https://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/favicon_v2_7145ff0.ico"
+    }
+  },
+  "time": 1160
+}

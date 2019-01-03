@@ -1,0 +1,1032 @@
+
+<!DOCTYPE HTML>
+<html xml:lang="en-TH" lang="en-TH">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>  Mi Thailand</title>
+
+  
+      <link rel="canonical" href="//www.mi.com/th/">
+    <link ref="alternate"  href="//www.mi.com/index.html"  hreflang="zh-cn" /><link ref="alternate"  href="//www.mi.com/hk/"  hreflang="zh-hk" /><link ref="alternate"  href="//www.mi.com/tw/"  hreflang="zh-tw" /><link ref="alternate"  href="//www.mi.com/sg/"  hreflang="en-sg" /><link ref="alternate"  href="//www.mi.com/my/"  hreflang="en-my" /><link ref="alternate"  href="//www.mi.com/ph/"  hreflang="en-ph" /><link ref="alternate"  href="//www.mi.com/bd/" /><link ref="alternate"  href="//www.mi.com/in/"  hreflang="en-in" /><link ref="alternate"  href="//www.mi.com/np" /><link ref="alternate"  href="//www.mi.com/id/"  hreflang="id-id" /><link ref="alternate"  href="//www.mi.com/it/" /><link ref="alternate"  href="//www.mi.com/fr/" /><link ref="alternate"  href="//www.mi.com/mea/" /><link ref="alternate"  href="//www.mi.com/pl/" /><link ref="alternate"  href="//www.mi.com/ru/"  hreflang="ru-ru" /><link ref="alternate"  href="//www.mi.com/ua/" /><link ref="alternate"  href="//www.mi.com/vn/" /><link ref="alternate"  href="//www.mi.com/mx/" /><link ref="alternate"  href="//www.mi.com/kr/" /><link ref="alternate"  href="//www.mi.com/eg/" /><link ref="alternate"  href="//www.mi.com/th/" /><link ref="alternate"  href="//www.mi.com/es/"  hreflang="es" /><link ref="alternate"  href="//www.mi.com/us" /><link ref="alternate"  href="//www.mi.com/uk" /><link ref="alternate"  href="//www.mi.com/global/" /><link ref="alternate" href="//www.mi.com/th/" />  
+
+
+        
+<link href="//i01.appmifile.com/webfile/globalimg/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="//s01.appmifile.com/css/th/base.css?adbb041">
+
+  <link rel="stylesheet" type="text/css" href="//s01.appmifile.com/css/th/index.css?b7f8d31" />
+<script type="text/javascript" src="//s01.appmifile.com/js/th/base.js?83b4833"></script>
+  
+<script type="text/javascript" src="//s01.appmifile.com/js/stats/xmsg_ti.js?20180227"></script>
+    
+<script type="text/javascript">
+  //Google统计
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-51415204-47', 'mi.com');
+  ga('require', 'displayfeatures');
+  ga('require', 'outboundLinkTracker', { // GA 外链统计，只统计域名非 mi.com 的链接
+    shouldTrackOutboundLink: function(link, parseUrl) {
+      var href = link.getAttribute('href') || link.getAttribute('xlink:href');
+      var url = parseUrl(href);
+      return !( /mi\.com$/.test(url.hostname) ) && !( /^javascript:/.test(url.hostname) );
+    }
+  });
+  ga('require', 'maxScrollTracker');
+  ga('send', 'pageview');
+</script>
+
+<script>
+var pageController = 'Static';
+var pageAction = 'Home';
+var APP_LOCAL = 'th';
+var FB_PIXELID = '';
+var FB_CURRENCY = '';
+
+if (FB_PIXELID.length === 0) {
+  switch (APP_LOCAL) {
+    case 'ru':
+      FB_PIXELID = '223198418379595'
+      break;
+    case 'id':
+      FB_PIXELID = '505882623202971'
+      break;
+    default:
+      break;
+  }
+}
+
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+try { // 防止埋点报错
+  fbq('init', FB_PIXELID);
+  fbq('track', "PageView");
+  switch (pageController) {
+    // 产品页
+    case 'Static' || 'Commodity' || 'Accessories':
+      fbq('track', 'ViewContent', {
+        value: '', //对应产品的价值
+        currency: FB_CURRENCY, //对应货币类型
+        content_ids: '', // 对应网站产品的 id或者Sku
+        content_type: 'product', //  固定值：pruduct
+      });
+      break;
+    // 购物车
+    case 'Cart':
+      fbq('track', 'AddToCart', {
+        value: '', //购买产品的总价值
+        currency: FB_CURRENCY, //对应货币类型
+        content_ids: '', // 对应网站产品的 id或者Sku
+        content_type: 'product',  //  固定值：pruduct
+        quantity: '', // 对应加入购物车产品的数量
+      });
+      break;
+    case 'Buy':
+      // 加购页面
+      if (pageAction == 'checkout') {
+        fbq('track', 'InitiateCheckout', {
+          value: '', //对应产品的价值
+          currency: FB_CURRENCY, //对应货币类型
+          content_ids: '', // 对应网站产品的 id或者Sku
+          content_type: 'product', //  固定值：pruduct
+          quantity: '', // 对应下订单产品的数量
+        });
+      } else if (pageAction == 'confirm') {
+        fbq('track', 'AddPaymentInfo');
+      } else if (pageAction == 'afterpaypal') { // 购买完成页面
+        fbq('track', 'Purchase', {
+          value: '', //对应产品的价值
+          currency: FB_CURRENCY, //对应货币类型
+          content_ids: '', // 对应网站产品的 id或者Sku
+          content_type: 'product', //  固定值：pruduct
+          quantity: '', // 对应下订单产品的数量
+          order_id: ''// 对应 该订单的id号
+        });
+      }
+      break;
+    default:
+      break;
+  }
+} catch (e) {
+  console.warn(e);
+}
+</script>
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+  <div class="entry-board J_entryBoard">
+  <div class="container">
+    <ul class="external-entries">
+      <li class="entry "><a  href="//www.mi.com/th/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-sub_navigation-Mi Thailand_click', '//www.mi.com/th/'])">Mi Thailand</a></li>
+<li class="entry "><a  href="http://en.miui.com/"  target="_blank"  onclick="_msq.push(['trackEvent', 'event', 'index', '-sub_navigation-MIUI_click', 'http://en.miui.com/'])">MIUI</a></li>
+<li class="entry "><a  href=" //c.mi.com/th/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-sub_navigation-Mi Community_click', ' //c.mi.com/th/'])">Mi Community</a></li>
+    </ul>
+
+        <div class="account-info mini">
+      <div class="sign-entries" id="J_signEntries">
+        <ul>
+          <li class="entry">
+            <a href="//buy.mi.com/th/site/login" onclick="_msq.push(['trackEvent', 'event', 'index', '-sub_navigation-message_click', '//buy.mi.com/th/site/login']);">ลงชื่อเข้าใช้</a>
+          </li>
+          <li class="entry">
+            <a href="//account.xiaomi.com/pass/register?callback=https%3A%2F%2Fhd.c.mi.com%2Fin%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Fth%26sign%3DNTM4NWY3ZDgyNzVlOGZlYjdlNTZkZTdhNjM0YzM0MTEzMTEwMjIzNQ%2C%2C&sid=mi_event_prod&_locale=en_US" target="_blank"   onclick="_msq.push(['trackEvent', 'event', 'index', '-sub_navigation-order_click', '//account.xiaomi.com/pass/register?callback=https%3A%2F%2Fhd.c.mi.com%2Fin%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Fth%26sign%3DNTM4NWY3ZDgyNzVlOGZlYjdlNTZkZTdhNjM0YzM0MTEzMTEwMjIzNQ%2C%2C&sid=mi_event_prod&_locale=en_US']);">ลงทะเบียน</a>
+          </li>
+        </ul>
+      </div>
+      <div class="signed-user" id="J_signedUser">
+        <div class="entry user-entry J_foldingEntry">
+          <a href="javascript:void(0);"><span class="name" id="J_userName"></span><i class="iconfont-arrowdown-s-16"></i></a>
+          <div class="user-entry-list">
+            <ul>
+              <li class="entry">
+                <a href="//account.xiaomi.com/" target="_blank" >บัญชี Mi</a>
+              </li>
+              <li class="entry">
+                <a href="//buy.mi.com/th/site/logout" rel="nofollow">ลงชื่ออก</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  </div>
+</div>
+
+  <nav class="site-navigation">
+  <div id="J_curtain" class="curtain index ">
+    <div class="container">
+            <div class="milogo">
+        <div class="milogo-wrapper">
+          <a href="//www.mi.com/th/index.html"  onclick="_msq.push(['trackEvent', 'event', 'cart','-head-homelogo_click', '//www.mi.com/th/index.html'  ]);"  >
+            <img src="//i01.appmifile.com/webfile/globalimg/pandora/mihome.png" />
+          </a>
+        </div>
+        
+      </div>      <div id="J_shopCategories" class="shop-categories">
+        <div class="categories-wrapper">
+                  <dl>
+          <dt class="main-category">
+            <a   target="_self"   onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Phones_click', ' ']);" >Mi Phones</a>
+          </dt>
+                          <dd class="products-exhibit">
+            <div class="container products-exhibit-wrapper">
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mix3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi MIX 3_click', ' ']);" data-stat-aid = "HWAA48c1f495f306b13317b8110803b14bc0"data-stat-pid= "46_6658_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Sukrita/green.png?width=140&height=140" alt="Mi MIX 3" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mix3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi MIX 3_click', ' ']);" data-stat-aid = "HWAA48c1f495f306b13317b8110803b14bc0"data-stat-pid= "46_6658_0">Mi MIX 3</a>
+                <span class="product-price">฿ 18,999 </span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-8-pro/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8 Pro_click', ' ']);" data-stat-aid = "HWAA94f11ba3c000d019cf5eae9cf55cd74a"data-stat-pid= "46_5953_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/mi-8-pro-800x800.png?width=140&height=140" alt="Mi 8 Pro" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-8-pro/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8 Pro_click', ' ']);" data-stat-aid = "HWAA94f11ba3c000d019cf5eae9cf55cd74a"data-stat-pid= "46_5953_0">Mi 8 Pro</a>
+                <span class="product-price">฿ 19,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi8"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8_click', ' ']);" data-stat-aid = "HWAAc4e1794be64dbfba098097b251718aaf"data-stat-pid= "46_4521_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/Mi8white140140.png?width=140&height=140" alt="Mi 8" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi8"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8_click', ' ']);" data-stat-aid = "HWAAc4e1794be64dbfba098097b251718aaf"data-stat-pid= "46_4521_0">Mi 8</a>
+                <span class="product-price">ราคาเริ่มต้น ฿ 15,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-8-lite/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8 Lite_click', ' ']);" data-stat-aid = "HWAA338f700b7f7f7d26e47ed60dfec61a46"data-stat-pid= "46_5952_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/mi-8-lite-blue-800x800.png?width=140&height=140" alt="Mi 8 Lite" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-8-lite/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi 8 Lite_click', ' ']);" data-stat-aid = "HWAA338f700b7f7f7d26e47ed60dfec61a46"data-stat-pid= "46_5952_0">Mi 8 Lite</a>
+                <span class="product-price">฿ 9,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/max3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Max 3 _click', ' ']);" data-stat-aid = "HWAAa5e99c641330ad5dabf1e0999092aef2"data-stat-pid= "46_4977_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/Max-3-Black.png?width=140&height=140" alt="Mi Max 3 " width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/max3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Max 3 _click', ' ']);" data-stat-aid = "HWAAa5e99c641330ad5dabf1e0999092aef2"data-stat-pid= "46_4977_0">Mi Max 3 </a>
+                <span class="product-price">฿ 9,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/list/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-More_click', ' ']);" data-stat-aid = "HWAAd3da97e2d9aee5c8fbe03156ad051c99"data-stat-pid= "46_6745_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Sukrita/more1.png?width=140&height=140" alt="More" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/list/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-More_click', ' ']);" data-stat-aid = "HWAAd3da97e2d9aee5c8fbe03156ad051c99"data-stat-pid= "46_6745_0">More</a>
+                <span class="product-price"></span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-a2/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi A2_click', ' ']);" data-stat-aid = "HWAA33563f07a1fc1272ef102dbc9b06bb48"data-stat-pid= "46_4520_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Tina/D2S-nav-140.png?width=140&height=140" alt="Mi A2" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-a2/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi A2_click', ' ']);" data-stat-aid = "HWAA33563f07a1fc1272ef102dbc9b06bb48"data-stat-pid= "46_4520_0">Mi A2</a>
+                <span class="product-price">ราคาเริ่มต้น ฿8,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-a2-lite"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi A2 Lite_click', ' ']);" data-stat-aid = "HWAAd7b45a839ee6cf047a5baf4e4c733130"data-stat-pid= "46_4519_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Tina/D1S-nav-140.png?width=140&height=140" alt="Mi A2 Lite" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-a2-lite"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi A2 Lite_click', ' ']);" data-stat-aid = "HWAAd7b45a839ee6cf047a5baf4e4c733130"data-stat-pid= "46_4519_0">Mi A2 Lite</a>
+                <span class="product-price">฿ 6,290</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mix2s/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi MIX 2S_click', ' ']);" data-stat-aid = "HWAA7afae7f3de7c1250bd9753bda610fdaa"data-stat-pid= "46_4115_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/en/Mix2swhite800x800.png?width=140&height=140" alt="Mi MIX 2S" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mix2s/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi MIX 2S_click', ' ']);" data-stat-aid = "HWAA7afae7f3de7c1250bd9753bda610fdaa"data-stat-pid= "46_4115_0">Mi MIX 2S</a>
+                <span class="product-price">ราคาเริ่มต้น ฿17,990</span>
+                                                  </div>
+                          </div>
+          </dd>
+                    </dl>
+                  <dl>
+          <dt class="main-category">
+            <a   target="_self"   onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi Phones_click', ' ']);" >Redmi Phones</a>
+          </dt>
+                          <dd class="products-exhibit">
+            <div class="container products-exhibit-wrapper">
+                                            <div class="main-product">
+                <a class="product-image"  href="https://www.lazada.co.th/products/xiaomi-redmi-note-6-pro-464gb-i259995947-s400389108.html?spm=a2o4m.12105514.8263053380.3.2ed014d7hDy0VA&search=1&mp=1&scm=1003.4.icms-zebra-100161012-3206839.ITEM_259995947_2836421&laz_trackid=2:mm_150081194_51302550_2010"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi Note 6 Pro_click', ' ']);" data-stat-aid = "HWAA44bb49fc6ca55e4fb0513c2d06fe735a"data-stat-pid= "46_5353_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/E7T-BLACK.png?width=140&height=140" alt="Redmi Note 6 Pro" width="140" height="140">
+                </a>
+                <a class="product-name"  href="https://www.lazada.co.th/products/xiaomi-redmi-note-6-pro-464gb-i259995947-s400389108.html?spm=a2o4m.12105514.8263053380.3.2ed014d7hDy0VA&search=1&mp=1&scm=1003.4.icms-zebra-100161012-3206839.ITEM_259995947_2836421&laz_trackid=2:mm_150081194_51302550_2010"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi Note 6 Pro_click', ' ']);" data-stat-aid = "HWAA44bb49fc6ca55e4fb0513c2d06fe735a"data-stat-pid= "46_5353_0">Redmi Note 6 Pro</a>
+                <span class="product-price">฿6,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="https://www.lazada.co.th/products/xiaomi-redmi-6a-216gb-i248488041-s382665404.html?spm=a2o4m.seller.list.1.5ee773cdK4suDR&mp=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtc1ctrg15hbr4qp"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi 6A_click', ' ']);" data-stat-aid = "HWAA1c7d0bb631dd5bab468f54510984af32"data-stat-pid= "46_3598_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Tina/grey-140-6a.png?width=140&height=140" alt="Redmi 6A" width="140" height="140">
+                </a>
+                <a class="product-name"  href="https://www.lazada.co.th/products/xiaomi-redmi-6a-216gb-i248488041-s382665404.html?spm=a2o4m.seller.list.1.5ee773cdK4suDR&mp=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtc1ctrg15hbr4qp"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi 6A_click', ' ']);" data-stat-aid = "HWAA1c7d0bb631dd5bab468f54510984af32"data-stat-pid= "46_3598_0">Redmi 6A</a>
+                <span class="product-price"> ราคาเริ่มต้น ฿3,590 </span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/redmi-6"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi 6_click', ' ']);" data-stat-aid = "HWAAa9ada81739d97a37a1a1abb5cde40912"data-stat-pid= "46_4441_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Tina/gold-140-6.png?width=140&height=140" alt="Redmi 6" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/redmi-6"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi 6_click', ' ']);" data-stat-aid = "HWAAa9ada81739d97a37a1a1abb5cde40912"data-stat-pid= "46_4441_0">Redmi 6</a>
+                <span class="product-price">฿5,790 </span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/redmi-note-5/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi Note 5_click', ' ']);" data-stat-aid = "HWAA1392214097d06c7d01ca4da82dcdf10a"data-stat-pid= "46_4116_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/en/E7Sblack.jpg?width=140&height=140" alt="Redmi Note 5" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/redmi-note-5/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Redmi Note 5_click', ' ']);" data-stat-aid = "HWAA1392214097d06c7d01ca4da82dcdf10a"data-stat-pid= "46_4116_0">Redmi Note 5</a>
+                <span class="product-price">ราคาเริ่มต้น ฿5,990</span>
+                                                  </div>
+                          </div>
+          </dd>
+                    </dl>
+                  <dl>
+          <dt class="main-category">
+            <a   target="_self"   onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-POCOPHONE_click', ' ']);" >POCOPHONE</a>
+          </dt>
+                          <dd class="products-exhibit">
+            <div class="container products-exhibit-wrapper">
+                                            <div class="main-product">
+                <a class="product-image"  href="https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctrfq3tcqjr8"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-POCOPHONE F1_click', ' ']);" data-stat-aid = "HWAA1ff5b516064cf4fe769fcea88e5161cf"data-stat-pid= "46_5047_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/PocoPhone-gray-800X800.png?width=140&height=140" alt="POCOPHONE F1" width="140" height="140">
+                </a>
+                <a class="product-name"  href="https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctrfq3tcqjr8"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-POCOPHONE F1_click', ' ']);" data-stat-aid = "HWAA1ff5b516064cf4fe769fcea88e5161cf"data-stat-pid= "46_5047_0">POCOPHONE F1</a>
+                <span class="product-price">ราคาเริ่มต้น ฿ 10,990</span>
+                                                  </div>
+                          </div>
+          </dd>
+                    </dl>
+                  <dl>
+          <dt class="main-category">
+            <a  href="//www.mi.com/th"  target="_self"   onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-อุปกรณ์อัจฉริยะ_click', '//www.mi.com/th ']);" >อุปกรณ์อัจฉริยะ</a>
+          </dt>
+                          <dd class="products-exhibit">
+            <div class="container products-exhibit-wrapper">
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/camera-360/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Home Security Camera 360° 1080P_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA09d32bcebc55158b2a5cc43136196e49"data-stat-pid= "46_6610_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/camera-360-1.png?width=140&height=140" alt="Mi Home Security Camera 360° 1080P" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/camera-360/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Home Security Camera 360° 1080P_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA09d32bcebc55158b2a5cc43136196e49"data-stat-pid= "46_6610_0">Mi Home Security Camera 360° 1080P</a>
+                <span class="product-price">฿ 1,490</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-band-3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Band 3_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA3cbaef82335d45390db0b557dd4782a8"data-stat-pid= "46_5863_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/Mi-Band-3-black-800x800.png?width=140&height=140" alt="Mi Band 3" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-band-3/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Band 3_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA3cbaef82335d45390db0b557dd4782a8"data-stat-pid= "46_5863_0">Mi Band 3</a>
+                <span class="product-price">฿ 1,190</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-air-purifier-2s/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-เครื่องฟอกอากาศ Mi 2S_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA387b73cdb0cbe38eddb0227a65ae8095"data-stat-pid= "46_5304_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Sukrita/70pz/Air2s.jpg?width=140&height=140" alt="เครื่องฟอกอากาศ Mi 2S" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-air-purifier-2s/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-เครื่องฟอกอากาศ Mi 2S_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA387b73cdb0cbe38eddb0227a65ae8095"data-stat-pid= "46_5304_0">เครื่องฟอกอากาศ Mi 2S</a>
+                <span class="product-price">฿ 5,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-robot-vacuum/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Robot Vacuum_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA59f2c050e4b0ebde17fb63bdb746bb97"data-stat-pid= "46_5232_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/mi-robot-vacuum-800x800.png?width=140&height=140" alt="Mi Robot Vacuum" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-robot-vacuum/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Robot Vacuum_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA59f2c050e4b0ebde17fb63bdb746bb97"data-stat-pid= "46_5232_0">Mi Robot Vacuum</a>
+                <span class="product-price">฿ 12,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mibookair-13/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Notebook Air 13.3_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA137cd3f6ba48329e3a7f76ad26c22b48"data-stat-pid= "46_5068_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Iris/grey-800x800.png?width=140&height=140" alt="Mi Notebook Air 13.3" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mibookair-13/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi Notebook Air 13.3_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA137cd3f6ba48329e3a7f76ad26c22b48"data-stat-pid= "46_5068_0">Mi Notebook Air 13.3</a>
+                <span class="product-price">฿ 35,990</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/list/#4"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-More_click', '//www.mi.com/th ']);" data-stat-aid = "HWAAd3da97e2d9aee5c8fbe03156ad051c99"data-stat-pid= "46_6743_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Sukrita/more1.png?width=140&height=140" alt="More" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/list/#4"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-More_click', '//www.mi.com/th ']);" data-stat-aid = "HWAAd3da97e2d9aee5c8fbe03156ad051c99"data-stat-pid= "46_6743_0">More</a>
+                <span class="product-price"></span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-electronic-scooter/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi สกู๊ตเตอร์ไฟฟ้า_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA6a2cc23e1242952d52df0809cc17e530"data-stat-pid= "46_3482_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/th/banner/Mi-Electric-Scooter-Black.png?width=140&height=140" alt="Mi สกู๊ตเตอร์ไฟฟ้า" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-electronic-scooter/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi สกู๊ตเตอร์ไฟฟ้า_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA6a2cc23e1242952d52df0809cc17e530"data-stat-pid= "46_3482_0">Mi สกู๊ตเตอร์ไฟฟ้า</a>
+                <span class="product-price">฿ 21,490</span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mj-panorama-camera/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-กล้อง Mi Sphere_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA3eaa93ca7ed0b40e7d4c1a85f7814617"data-stat-pid= "46_3021_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/th/banner/Mi-Sphere-Camera-Kit-Black.png?width=140&height=140" alt="กล้อง Mi Sphere" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mj-panorama-camera/"  target="_self"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-กล้อง Mi Sphere_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA3eaa93ca7ed0b40e7d4c1a85f7814617"data-stat-pid= "46_3021_0">กล้อง Mi Sphere</a>
+                <span class="product-price"></span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/mi-body-composition-scale/"  target="_blank"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-เครื่องชั่งน้ำหนักอัจฉริยะ Mi_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA12ff049283a172bb99d3b1ffaea872bd"data-stat-pid= "46_2725_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/th/banner/body-composition-scale-nav.jpg?width=140&height=140" alt="เครื่องชั่งน้ำหนักอัจฉริยะ Mi" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/mi-body-composition-scale/"  target="_blank"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-เครื่องชั่งน้ำหนักอัจฉริยะ Mi_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA12ff049283a172bb99d3b1ffaea872bd"data-stat-pid= "46_2725_0">เครื่องชั่งน้ำหนักอัจฉริยะ Mi</a>
+                <span class="product-price"></span>
+                                                  </div>
+                                            <div class="main-product">
+                <a class="product-image"  href="//www.mi.com/th/miband2/"  target="_blank"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi แบนด์ 2_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA02a79c129c49f8e0abaf8c2c33149178"data-stat-pid= "46_2702_0">
+                  <img src="" data-src="//i01.appmifile.com/webfile/globalimg/th/banner/Mi-Band-2-Black.png?width=140&height=140" alt="Mi แบนด์ 2" width="140" height="140">
+                </a>
+                <a class="product-name"  href="//www.mi.com/th/miband2/"  target="_blank"  onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-Mi แบนด์ 2_click', '//www.mi.com/th ']);" data-stat-aid = "HWAA02a79c129c49f8e0abaf8c2c33149178"data-stat-pid= "46_2702_0">Mi แบนด์ 2</a>
+                <span class="product-price"></span>
+                                                  </div>
+                          </div>
+          </dd>
+                    </dl>
+                  <dl>
+          <dt class="main-category">
+            <a  href="//www.mi.com/th/service/wheretobuy/"  target="_self"   onclick="_msq.push(['trackEvent', 'event', 'index', '-navigation-ร้านค้าปลีก_click', '//www.mi.com/th/service/wheretobuy/ ']);" >ร้านค้าปลีก</a>
+          </dt>
+                    </dl>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <div id="J_siteSearch" class="site-search-section">
+      <div class="site-search-wrapper">
+        <form id="J_siteSearchForm" class="site-search-form" action="//buy.mi.com/th/search" method="get">
+          <input id="J_siteSearchInput" class="site-search-input" type="text" placeholder="Search Mi.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+          <button id="J_siteSearchSubmit" class="site-search-submit" type="submit" aria-label="Submit" disabled><i class="iconfont-search-24"></i></button>
+        </form>
+      </div>
+
+      <div id="J_siteSearchQuickLinks" class="site-search-quicklinks">
+        <h3 class="quicklinks-header">Quick Links</h3>
+
+        <ul class="quicklinks-list">
+                  </ul>
+      </div>
+    </div>
+  </div>
+
+</nav>
+
+  
+<script>
+  if('th' === 'mena'){
+    Xiaomi.utils.cookie('globalSite', 'mea', {
+      domain: '.mi.com',
+      path: '/',
+      expires: 365
+    });
+  }else{
+    Xiaomi.utils.cookie('globalSite', 'th', {
+      domain: '.mi.com',
+      path: '/',
+      expires: 365
+    });
+  }
+</script>
+
+
+<div class="home main">
+
+  <div class="home-top">
+    <div class="home-top-slides" id="topSlide">
+          
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/mix3/" onclick="Xiaomi.utils.trackGALink(this,'Mi MIX 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner1_click', '//www.mi.com/th/mix3/']);"
+ data-stat-aid = "HWAA344fdd472c158c8ff66378127dad2283" data-stat-pid= "46_329_0">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/MIX-3-banner-PC.jpg" alt="Mi MIX 3" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi MIX 3<br><small><small>Art x Technology</small></small></h3>
+			<p class='descp'>หน้าจอ Full Screen 6.39"<br>
+หน้าจอแบบสไลด์ด้วยระบบแม่เหล็ก<br>
+กล้องคู่หลังระดับเรือธง<br>
+ดีไซน์ด้วยผิวเซรามิก</p>
+			<p class="price">
+				<span class="dollar">฿</span> 18,999			</p>
+			                        <a target="" href="//www.mi.com/th/mix3/" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi MIX 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner1_click', '//www.mi.com/th/mix3/']);"
+ data-stat-aid = "HWAA344fdd472c158c8ff66378127dad2283" data-stat-pid= "46_329_0">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+      
+      
+    
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/mi-8-pro" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Pro-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner4_click', '//www.mi.com/th/mi-8-pro']);"
+ data-stat-aid = "HWAA0dacc1115fa9035649028f43c1ae603b" data-stat-pid= "46_329_3">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/E1S-Mi-8-Pro-pcBanner.jpg" alt="Mi 8 Pro" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi 8 Pro<br><small><small>See beyond the future</small></small></h3>
+			<p class='descp'>สแกนลายนิ้วมือบนหน้าจอ<br>
+Qualcomm® Snapdragon™ 845<br>
+กล้องหลังคู่ AI พร้อมพิกเซล 1.4μm<br>
+กล้องหน้าเซลฟี่ 20 ล้านพิกเซล</p>
+			<p class="price">
+				<span class="dollar">฿</span> 19,990			</p>
+			                        <a target="" href="//www.mi.com/th/mi-8-pro" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Pro-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner4_click', '//www.mi.com/th/mi-8-pro']);"
+ data-stat-aid = "HWAA0dacc1115fa9035649028f43c1ae603b" data-stat-pid= "46_329_3">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+    
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/mi-8-lite/" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Lite-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner5_click', '//www.mi.com/th/mi-8-lite/']);"
+ data-stat-aid = "HWAA15523ebf670d8bc2d2f6aa4a1eb6c891" data-stat-pid= "46_329_4">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/D2T-Mi-8-Lite-Banner-pc.jpg" alt="Mi 8 Lite" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi 8 Lite<br><small><small>Selfies with style</small></small></h3>
+			<p class='descp'>กล้องเซลฟี่ 24 ล้านพิกเซล<br>
+กล้องคู่ AI 12+5 ล้านพิกเซล<br>
+หน้าจอ 6.26 นิ้ว ความละเอียด FHD+<br>
+Qualcomm® Snapdragon™ 660</p>
+			<p class="price">
+				<span class="dollar">฿</span> 9,990			</p>
+			                        <a target="" href="//www.mi.com/th/mi-8-lite/" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Lite-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner5_click', '//www.mi.com/th/mi-8-lite/']);"
+ data-stat-aid = "HWAA15523ebf670d8bc2d2f6aa4a1eb6c891" data-stat-pid= "46_329_4">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+    
+        <div class='slider'>
+	<a target="" href="https://www.poco.net/global/" onclick="Xiaomi.utils.trackGALink(this,'POCOPHONE F1-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner6_click', 'https://www.poco.net/global/']);"
+ data-stat-aid = "HWAA362db2c6e2fcead41ad710490fba7d52" data-stat-pid= "46_329_5">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/Pocophone-Banner-PC-noword.jpg" alt="POCOPHONE F1" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">POCOPHONE F1<br><small><small>Master of Speed</small></small></h3>
+			<p class='descp'>Qualcomm® Snapdragon™ 845<br>
+เทคโนโลยี LiquidCool<br>
+4000mAh (typ) 
+แบตเตอรี่มีความจุสูง | กล้องหลังคู่ AI </p>
+			<p class="price">
+				<span class="dollar">฿</span> ราคาเริ่มต้น 10,990			</p>
+			                        <a target="" href="https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctrfq3tcqjr8" class="btn" onclick="Xiaomi.utils.trackGALink(this,'POCOPHONE F1-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner6_click', 'https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctrfq3tcqjr8']);"
+ data-stat-aid = "HWAA362db2c6e2fcead41ad710490fba7d52" data-stat-pid= "46_329_5">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+    
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/mi-band-3/" onclick="Xiaomi.utils.trackGALink(this,'Mi Band 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner7_click', '//www.mi.com/th/mi-band-3/']);"
+ data-stat-aid = "HWAAdbd2f2eb6e3e85286545472301cedd21" data-stat-pid= "46_329_6">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/Mi-band-3-banner-pc.jpg" alt="Mi Band 3" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi Band 3<br><small><small>Step up, make it count</small></small></h3>
+			<p class='descp'>หน้าจอ OLED แบบสัมผัสขนาด 0.78 นิ้ว<br>
+ติดตามและจัดการเพื่อสุขภาพที่ดี<br>
+ตรวจสอบสายเรียกเข้า ข้อความและสภาพอากาศ<br>
+กันนํ้าลึกสูงสุด 50 เมตร</p>
+			<p class="price">
+				<span class="dollar">฿ </span> 1,190			</p>
+			                        <a target="" href="//www.mi.com/th/mi-band-3/" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi Band 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner7_click', '//www.mi.com/th/mi-band-3/']);"
+ data-stat-aid = "HWAAdbd2f2eb6e3e85286545472301cedd21" data-stat-pid= "46_329_6">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+      
+      
+    
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/max3/" onclick="Xiaomi.utils.trackGALink(this,'Mi Max 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner10_click', '//www.mi.com/th/max3/']);"
+ data-stat-aid = "HWAA54a3a3d5c7bda8a01bafb8ac7b23573d" data-stat-pid= "46_329_9">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/mix3banner.jpg" alt="Mi Max 3" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi Max 3<br><small><small>จอใหญ่เต็มตา แบตอึดเต็มพิกัด</small></small></h3>
+			<p class='descp'>หน้าจอ Full view ขนาด 6.9 นิ้ว | อัตราส่วน 18:9<br>
+แบตเตอรี่ความจุ 5500 mAh (typ)<br>
+กล้องคู่ AI ระดับเรือธง 12 MP + 5 MP<br>
+หน่วยประมวลผลแบบ 14nm Octa-core รุ่น Snapdragon™ 636 </p>
+			<p class="price">
+				<span class="dollar">฿</span> 9,990			</p>
+			                        <a target="" href="//www.mi.com/th/max3/" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi Max 3-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner10_click', '//www.mi.com/th/max3/']);"
+ data-stat-aid = "HWAA54a3a3d5c7bda8a01bafb8ac7b23573d" data-stat-pid= "46_329_9">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+    
+        <div class='slider'>
+	<a target="" href="//www.mi.com/th/mi8" onclick="Xiaomi.utils.trackGALink(this,'Mi 8-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner11_click', '//www.mi.com/th/mi8']);"
+ data-stat-aid = "HWAAdef2a71da3fffc219fe9c826a7d24af1" data-stat-pid= "46_329_10">
+		<img class="slide-image" src="//i01.appmifile.com/webfile/globalimg/Iris/PC.jpg" alt="" />
+	</a>
+	<div>
+		<div class="txt c-white" data-color="c-white" style="top: 50%; margin-top: -148px; left: 50%; margin-left: -513px;">
+			<h3 class='title' style="font-size:60px">Mi 8<br><small><small>The 2018 Xiaomi Flagship</small></small></h3>
+			<p class='descp'>กล้องหลังคู่ AI พิกเซลขนาด 1.4μm<br>
+Qualcomm® Snapdragon 845<br>
+Dual-frequency GPS<br>
+หน้าจอ AMOLED แบบไร้ขอบ 6.21"<br></p>
+			<p class="price">
+				<span class="dollar">฿</span> ราคาเริ่มต้น 15,990			</p>
+			                        <a target="" href="//www.mi.com/th/mi8" class="btn" onclick="Xiaomi.utils.trackGALink(this,'Mi 8-slider');_msq.push(['trackEvent', 'event', 'index', '-banner-banner11_click', '//www.mi.com/th/mi8']);"
+ data-stat-aid = "HWAAdef2a71da3fffc219fe9c826a7d24af1" data-stat-pid= "46_329_10">เรียนรู้เพิ่มเติม</a>
+                        		</div>
+	</div>
+</div>
+        
+      
+      
+      
+      
+      
+      
+      
+    </div>
+
+    <div class="home-promo">
+      <ul class="home-promo-list full-img">
+            <li>
+          <a target="" href="//www.mi.com/th/mi-8-pro/" class="item" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Pro-smallSlider');_msq.push(['trackEvent', 'event', 'index', '-referral-place1_click', '//www.mi.com/th/mi-8-pro/']);"
+ data-stat-aid = "HWAAcf39d04b81b4735bca320b786166c79c" data-stat-pid= "46_330_0">
+            <img src="//i01.appmifile.com/webfile/globalimg/Iris/TH-little-banner1.jpg?width=398&height=230" alt="Mi 8 Pro">
+          </a>
+         </li>
+        
+            <li>
+          <a target="" href="//www.mi.com/th/mi-8-lite/" class="item" onclick="Xiaomi.utils.trackGALink(this,'Mi 8 Lite-smallSlider');_msq.push(['trackEvent', 'event', 'index', '-referral-place2_click', '//www.mi.com/th/mi-8-lite/']);"
+ data-stat-aid = "HWAA0703583b06167501b41d80c48f001287" data-stat-pid= "46_330_1">
+            <img src="//i01.appmifile.com/webfile/globalimg/Iris/TH-little-banner2.jpg?width=398&height=230" alt="Mi 8 Lite">
+          </a>
+         </li>
+        
+            <li>
+          <a target="" href="https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctq09gsknndj" class="item" onclick="Xiaomi.utils.trackGALink(this,'POCOPHONE F1-smallSlider');_msq.push(['trackEvent', 'event', 'index', '-referral-place3_click', 'https://www.lazada.co.th/products/xiaomi-pocophone-f1-664gb-i235025875-s360310801.html?spm=a2o4m.searchlist.list.1.62ff78ed4DrlIe&search=1&laz_trackid=2:mm_150081194_51302550_2010352522:clk5grjtd1ctq09gsknndj']);"
+ data-stat-aid = "HWAA520f484afe044a29d4e59b929997318c" data-stat-pid= "46_330_2">
+            <img src="//i01.appmifile.com/webfile/globalimg/Sukrita/Pocophoneblack.jpg?width=398&height=230" alt="POCOPHONE F1">
+          </a>
+         </li>
+        
+        
+        
+        
+        
+        
+</ul>    </div>
+  </div>
+
+  <div class="home-middle">
+    <div class="home-star home-sec"  >
+      <div class="sec-hd">
+        <h2 class="sec-title"  >ผลิตภัณฑ์เด่น</h2>
+      </div>
+      <div class="sec-bd">
+        <ul class="home-star-list list-4 full-img">
+            <li>
+          <a target="" href="//www.mi.com/th/mi-band-3/" class="item" onclick="Xiaomi.utils.trackGALink(this,'Mi Band 3-star');_msq.push(['trackEvent', 'event', 'index', '-star_product-place1_click', '//www.mi.com/th/mi-band-3/']);"
+ data-stat-aid = "HWAA6102065d3348e75311156a8d1d3c40d8" data-stat-pid= "46_338_0">
+            <img src="//i01.appmifile.com/webfile/globalimg/Iris/hot-product1.jpg?width=612&height=612" alt="Mi Band 3">
+          </a>
+         </li>
+        
+            <li>
+          <a target="" href="https://www.lazada.co.th/products/xiaomi-redmi-note-6-pro-464gb-i259995947-s400389108.html?spm=a2o4m.12105514.8263053380.3.2ed014d7hDy0VA&search=1&mp=1&scm=1003.4.icms-zebra-100161012-3206839.ITEM_259995947_2836421&laz_trackid=2:mm_150081194_51302550_2010352522:clk5u7rad1ctq0jkvscoj" class="item" onclick="Xiaomi.utils.trackGALink(this,'Redmi Note 6 Pro-star');_msq.push(['trackEvent', 'event', 'index', '-star_product-place2_click', 'https://www.lazada.co.th/products/xiaomi-redmi-note-6-pro-464gb-i259995947-s400389108.html?spm=a2o4m.12105514.8263053380.3.2ed014d7hDy0VA&search=1&mp=1&scm=1003.4.icms-zebra-100161012-3206839.ITEM_259995947_2836421&laz_trackid=2:mm_150081194_51302550_2010352522:clk5u7rad1ctq0jkvscoj']);"
+ data-stat-aid = "HWAAcf8d3a3ed3c5afb1f20970fedcf2352b" data-stat-pid= "46_338_1">
+            <img src="//i01.appmifile.com/webfile/globalimg/Iris/hot-product2.jpg?width=612&height=612" alt="Redmi Note 6 Pro">
+          </a>
+         </li>
+        
+            <li>
+          <a target="" href="//www.mi.com/th/mi-a2/" class="item" onclick="Xiaomi.utils.trackGALink(this,'Mi A2-star');_msq.push(['trackEvent', 'event', 'index', '-star_product-place3_click', '//www.mi.com/th/mi-a2/']);"
+ data-stat-aid = "HWAAa599dd5d4ab207cf582f72f440d8f955" data-stat-pid= "46_338_2">
+            <img src="//i01.appmifile.com/webfile/globalimg/Iris/hot-product-5.jpg?width=612&height=612" alt="Mi A2">
+          </a>
+         </li>
+        
+            <li>
+          <a target="" href="//www.mi.com/th/mi-body-composition-scale/" class="item" onclick="Xiaomi.utils.trackGALink(this,'Mi body composition scale-star');_msq.push(['trackEvent', 'event', 'index', '-star_product-place4_click', '//www.mi.com/th/mi-body-composition-scale/']);"
+ data-stat-aid = "HWAA614313df1b0c0b77db9756b558805946" data-stat-pid= "46_338_3">
+            <img src="//i01.appmifile.com/webfile/globalimg/th/banner/2-body-com-sp.jpg?width=612&height=612" alt="Mi body composition scale">
+          </a>
+         </li>
+        
+        
+        
+        
+        
+</ul>      </div>
+    </div>
+    
+    
+    <div class="home-video home-sec"  >
+      <div class="sec-hd">
+        <h2 class="sec-title"  >วีดีโอ</h2>
+      </div>
+      <div class="sec-bd">
+        <ul class="video-list">
+      <li>
+        <a class="c-wrapper full-img J_video" href="//www.youtube.com/embed/nAa6XNUYfbg" onclick="_msq.push(['trackEvent', 'event', 'index', '-video-video1_click', '//www.youtube.com/embed/nAa6XNUYfbg'])" data-video="//www.youtube.com/embed/nAa6XNUYfbg" data-video-title="Mi 8 Lite"
+ data-stat-aid = "HWAAe1e8e90e5ea4913309335cd08eb84bf3" data-stat-pid= "46_331_0">
+          <span class="icon-play"></span>
+          <span class="descp">Mi 8 Lite<br>
+Selfies with style</span>
+          <img src="//i01.appmifile.com/webfile/globalimg/Iris/TH-video-mi-8-lite.jpg?width=398&height=320" alt="Mi 8 Lite">
+        </a>
+      </li>
+       
+      <li>
+        <a class="c-wrapper full-img J_video" href="//www.youtube.com/embed/x3vUxVqw8xo" onclick="_msq.push(['trackEvent', 'event', 'index', '-video-video2_click', '//www.youtube.com/embed/x3vUxVqw8xo'])" data-video="//www.youtube.com/embed/x3vUxVqw8xo" data-video-title="Mi Home Security Camera 360° "
+ data-stat-aid = "HWAAfa90cbe6005de83e062a37a7894ef7ea" data-stat-pid= "46_331_1">
+          <span class="icon-play"></span>
+          <span class="descp">Mi Home Security Camera 360°</span>
+          <img src="//i01.appmifile.com/webfile/globalimg/Sukrita/MiHomecamera.jpg?width=398&height=320" alt="Mi Home Security Camera 360° ">
+        </a>
+      </li>
+       
+      <li>
+        <a class="c-wrapper full-img J_video" href="//www.youtube.com/embed/MLEcrkcQ8BA" onclick="_msq.push(['trackEvent', 'event', 'index', '-video-video3_click', '//www.youtube.com/embed/MLEcrkcQ8BA'])" data-video="//www.youtube.com/embed/MLEcrkcQ8BA" data-video-title="MIUI 10"
+ data-stat-aid = "HWAA400b3564d464a7d0da010d3cf4747e96" data-stat-pid= "46_331_2">
+          <span class="icon-play"></span>
+          <span class="descp">MIUI 10</span>
+          <img src="//i01.appmifile.com/webfile/globalimg/Iris/TH-video-miui10.jpg?width=398&height=320" alt="MIUI 10">
+        </a>
+      </li>
+       
+   
+   
+   
+</ul>      </div>
+    </div>
+    <div class="home-media home-sec"  >
+      <div class="sec-hd">
+        <h2 class="sec-title"  >ประชาสัมพันธ์</h2>
+      </div>
+      <div class="sec-bd">
+        <div class="home-media-slides" id="mediaSlide">
+            
+                    
+<div class='slider'>
+	<img src="//i01.appmifile.com/webfile/globalimg/Iris/TH-a2-press.png"  alt="พา Mi8 Lite ถ่ายไฟกลางคืน Auto AI ยกแล้วถ่ายชิลๆ" /> 
+	<div class="container">
+		<div class='txt'>
+			<h3 class='title'>พา Mi8 Lite ถ่ายไฟกลางคืน Auto AI ยกแล้วถ่ายชิลๆ</h3>
+			<p class='descp'>การถ่ายกลางคืนของเจ้า MI8 Lite ถือว่าทำออกมาได้ดีมากน่าประทับใจเลยครับเรื่องสีสันและการเก็บดีเทล รวมไปถึงการจัดการ Noise </p>
+			<a target="_blank" href="//c.mi.com/thread-1686361-1-0.html" onclick="_msq.push(['trackEvent', 'event', 'index', '-press-press1_click', '//c.mi.com/thread-1686361-1-0.html'])" class="more"
+ data-stat-aid = "HWAA1f5f0f5791cf11742e919c4090d9b10f" data-stat-pid= "46_386_0">อ่านเพิ่มเติม</a>
+                        			<p class="media-name">gittipongvray</p>
+		</div>
+	</div>
+</div>
+  
+                    
+<div class='slider'>
+	<img src="//i01.appmifile.com/webfile/globalimg/Iris/th-mia2-press.png"  alt="10 ข้อดีที่ทำให้หลงรัก Mi A2" /> 
+	<div class="container">
+		<div class='txt'>
+			<h3 class='title'>10 ข้อดีที่ทำให้หลงรัก Mi A2</h3>
+			<p class='descp'>หลังจากได้จากได้ใช้ MI A2 เป็นเครื่องหลักมา 1 สัปดาห์ พบว่าเจ้ามือถือระดับกลางตัวนี้ให้ประสบการณ์การใช้ที่ตอบโจทย์ Life style ของผมเป็นอย่างดี
+</p>
+			<a target="_blank" href="//c.mi.com/thread-1581948-1-0.html" onclick="_msq.push(['trackEvent', 'event', 'index', '-press-press2_click', '//c.mi.com/thread-1581948-1-0.html'])" class="more"
+ data-stat-aid = "HWAA40968f99e2fdb672cb128c141e1085be" data-stat-pid= "46_386_1">อ่านเพิ่มเติม</a>
+                        			<p class="media-name">gittipongvray</p>
+		</div>
+	</div>
+</div>
+  
+                    
+<div class='slider'>
+	<img src="//i01.appmifile.com/webfile/globalimg/Iris/th-note-6-press.png"  alt="ถ่ายรูปทะเลหมอก ด้วยมือถือ Redmi Note 6 Pro" /> 
+	<div class="container">
+		<div class='txt'>
+			<h3 class='title'>ถ่ายรูปทะเลหมอก ด้วยมือถือ Redmi Note 6 Pro</h3>
+			<p class='descp'>ต้องบอกว่า Redmi Note 6 Pro เป็นมือถือที่ถ่ายรูปได้สวยงาม และฉลาดเกินค่าตัวมันมากเลยครับ ถูกใจกับคนที่ชอบออกไปท่องเที่ยว และต้องการความง่ายในการถ่ายรูปให้ดูสวย
+
+</p>
+			<a target="_blank" href="//c.mi.com/thread-1641667-1-0.html" onclick="_msq.push(['trackEvent', 'event', 'index', '-press-press3_click', '//c.mi.com/thread-1641667-1-0.html'])" class="more"
+ data-stat-aid = "HWAAf575df75a7efd357a998453942c0f454" data-stat-pid= "46_386_2">อ่านเพิ่มเติม</a>
+                        			<p class="media-name">AbZoLute</p>
+		</div>
+	</div>
+</div>
+  
+                    
+<div class='slider'>
+	<img src="//i01.appmifile.com/webfile/globalimg/Iris/band-3-th-press.png"  alt="แกะกล่องรีวิว | Xiaomi Mi Band 3 สายรัดข้อมือ Fitness Tracker กับราคาสบายกระเป๋าสุด ๆ" /> 
+	<div class="container">
+		<div class='txt'>
+			<h3 class='title'>แกะกล่องรีวิว | Xiaomi Mi Band 3 สายรัดข้อมือ Fitness Tracker กับราคาสบายกระเป๋าสุด ๆ</h3>
+			<p class='descp'>Mi Band 3 ตัวนี้ค่อนข้างคุ้มราคามาก ๆ เมื่อเทียบราคากับความสามารถที่ทำได้ น้ำหนักเบาใส่สบายสายเป็นซิลิโคนนิ่ม ๆ ผิวด้าน ๆ ใส่เเล้วไม่อึดอัด แบตเตอร์รี่อึดใช้งานได้ประมาณ 7-8 วันหรือ 1 อาทิตย์ กับการใช้งานเปิดเกือบสุดทุกอย่าง</p>
+			<a target="_blank" href="//c.mi.com/thread-1638014-1-0.html " onclick="_msq.push(['trackEvent', 'event', 'index', '-press-press4_click', '//c.mi.com/thread-1638014-1-0.html '])" class="more"
+ data-stat-aid = "HWAAa4a730da3b9d84b14888c9169314fbf0" data-stat-pid= "46_386_3">อ่านเพิ่มเติม</a>
+                        			<p class="media-name">MTMstudioclub</p>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div id="home_videowrap" class="modal modal-video fade">
+  <div class="modal-header">
+    <a type="button" data-dismiss="modal" aria-hidden="true" class="modalclose iconfont">&#xe92b;</a>
+    <h3 class="title">&nbsp;</h3>
+  </div>
+  <div class="modal-body"></div>
+</div>
+<div id="slideVideoPop" class="modal modal-slide-video fade">
+  <a type="button" data-dismiss="modal" aria-hidden="true" class="modalclose iconfont">&#xe92b;</a>
+  <div class="modal-body"></div>
+  <img src="//i01.appmifile.com/webfile/globalimg/hd/2017011301/c6-video-bg.jpg" class="c6-bg J_slidePopImg" alt="">
+</div>
+
+<script>
+  var _STAT_HASHNAME = '//www.mi.com/th/index.html';
+</script>
+<script id="miRecommendTemplate" type="text/x-dot-template">
+<div class="container">
+  <div class="xm-recommend row">
+    <ul class="brick-list" data-carousel-list="true">
+      {{~it.r :value:index}}
+      <li class="brick-item brick-item-m span5 J_xm-recommend-list {{? it.isBuy}}with-add-cart{{?}}" data-gid="{{=value.g}}">
+        {{? value.tag }}
+        <div class="tags">
+          {{? value.tag[1] !== '' }}
+          <div class="tag tag-saleoff">{{=value.tag[1]}}</div>
+          {{?? (value.tag[3] !== '0') && (value.tag[3] !== '') }}
+          <div class="tag tag-shipping">Free Shipping</div>
+          {{?? value.tag[4] === true }}
+          <div class="tag tag-gift">Free Gift</div>
+          {{?? value.tag[2] === true }}
+          <div class="tag tag-new">New</div>
+          {{?? value.tag[5] === true }}
+          <div class="tag tag-deal">Deal</div>
+          {{?}}
+        </div>
+        {{?}}
+        {{? it.isBuy}}
+        <div class="addcart">
+          <a class="btn-buy J_xm-recommend-btn" href="{{=it.global.orderSite}}/cart/add/{{=value.g}}" data-stat-text="{{=value.n}}" data-stat-method="{{=it.v}}_{{=value.a}}" data-stat-index={{=index}} data-gid={{=value.g}}>
+          <i class="iconfont-cartadd-24"></i>
+          <span>Add to cart</span>
+          </a>
+        </div>
+        {{?}}
+        <div class="img full-img">
+          <a href="{{=it.global.orderSite}}/item/{{=value.c}}" data-stat-text="{{=value.n}}" data-stat-method="{{=it.v}}_{{=value.a}}" data-stat-index={{=index}}>
+            <img src="{{=value.i}}?width=200&height=200" alt="{{=value.n}}">
+          </a>
+        </div>
+        <div class="txt">
+          <h4 class="title">
+            <a href="{{=it.global.orderSite}}/item/{{=value.c}}" data-stat-text="{{=value.n}}" data-stat-method="{{=it.v}}_{{=value.a}}" data-stat-index={{=index}}>{{=value.n}}</a>
+          </h4>
+          <p class="price">
+            ฿ {{=value.p}}
+            {{? value.pb > value.p }}
+            <del>฿ {{=value.pb}}</del>
+            {{?}}
+          </p>
+        </div>
+      </li>
+      {{~}}
+    </ul>
+  </div>
+</div>
+</script>
+
+<div class="footer">
+  
+  <div class="footer-customer-relationship">
+    <div class="container">
+      <div class="row">
+        <div class="customer-relationship span12">
+          <div class="introduction">
+            <h3>เพิ่มความสัมพันธ์กับเรา</h3>
+            <p>รับข้อมูลอัปเดตเกี่ยวกับข้อเสนอพิเศษด้านการขายและอื่นๆ อีกมากมาย</p>
+          </div>
+
+          <div class="customer-reaction">
+            <div class="customer-email">
+              <div id="J_emailSubscribe" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-enter_email_click', '']);"  >
+                <input id="J_emailInput" type="text" name="email" placeholder="ป้อนที่อยู่อีเมล">
+                <button id="J_submitEmail" type="submit"><i class="iconfont-arrowright-s-16"></i></button>
+                <div class="sub-prompt">
+                  <span class="success">ขอบคุณ คุณอยู่ในรายชื่ออีเมลของเราสำหรับข้อเสนอพิเศษ</span>
+                  <span class="invalid">ที่อยู่อีเมลไม่ถูกต้อง</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-relationship span8">
+          <div class="introduction">
+            <h3>ติดตาม Mi</h3>
+            <p>เราต้องการที่จะได้ยินเสียงจากคุณ!</p>
+          </div>
+          <div class="customer-reaction">
+            <div class="social-media">
+              <a href="https://www.facebook.com/thailand.xiaomi" title="Facebook" target="_blank" class="facebook-follow" rel="nofollow" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-followmi_Facebook_click', https://www.facebook.com/thailand.xiaomi]);"><i class="iconfont-facebook-18"></i></a>
+              <a href="https://www.instagram.com/thailand.xiaomi/" title="Instagram" target="_blank" class="instagram-follow" rel="nofollow" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-followmi_Instagram_click', https://www.instagram.com/thailand.xiaomi/ ]);"><i class="iconfont-ins-18"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div>
+        <div class="footer-nav">
+      <div class="container">
+        <div class="row">
+          <dl class="span3">
+            <dt>สินค้ายอดนิยม</dt>
+            <dd><a  href="//www.mi.com/th/mi-8-pro/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Mi 8 Pro'_click' , '//www.mi.com/th/mi-8-pro/']);">Mi 8 Pro</a>&nbsp;/&nbsp;<a  href="//www.mi.com/th/mi-8-lite/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Mi 8 Lite'_click' , '//www.mi.com/th/mi-8-lite/']);">Mi 8 Lite</a></dd><dd><a  href="//www.mi.com/th/redmi-note-6-pro/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Redmi Note 6 Pro'_click' , '//www.mi.com/th/redmi-note-6-pro/']);">Redmi Note 6 Pro</a></dd><dd><a  href="//www.mi.com/th/pocophone-f1/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'POCOPHONE F1'_click' , '//www.mi.com/th/pocophone-f1/']);">POCOPHONE F1</a></dd><dd><a  href="//www.mi.com/th/mi-band-3/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Mi Band 3'_click' , '//www.mi.com/th/mi-band-3/']);">Mi Band 3</a></dd>          </dl>
+          <dl class="span3">
+            <dt>สนับสนุน</dt>
+            <dd><a  href="//www.mi.com/th/support/warranty"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'รับประกัน'_click' , '//www.mi.com/th/support/warranty']);">รับประกัน</a></dd><dd><a  href="//www.mi.com/th/support/repair/"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'ศูนย์บริการ'_click' , '//www.mi.com/th/support/repair/']);">ศูนย์บริการ</a></dd>          </dl>
+          <dl class="span3">
+            <dt>ร้านค้าปลีก</dt>
+            <dd><a  href="//www.mi.com/th/service/wheretobuy/"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Mi Stores'_click' , '//www.mi.com/th/service/wheretobuy/']);">Mi Stores</a></dd>          </dl>
+          <dl class="span3">
+            <dt>เกี่ยวกับเรา</dt>
+            <dd><a  href="//www.mi.com/th/about/"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-' เกี่ยวกับเรา'_click' , '//www.mi.com/th/about/']);"> เกี่ยวกับเรา</a></dd><dd><a  href="//www.mi.com/th/about/#culture"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'วัฒนธรรม'_click' , '//www.mi.com/th/about/#culture']);">วัฒนธรรม</a></dd><dd><a  href="//www.mi.com/th/about/agreement/"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'ข้อตกลงการใช้'_click' , '//www.mi.com/th/about/agreement/']);">ข้อตกลงการใช้</a></dd><dd><a  href="//www.mi.com/th/about/privacy/"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'นโยบายความเป็นส่วนตัว'_click' , '//www.mi.com/th/about/privacy/']);">นโยบายความเป็นส่วนตัว</a></dd><dd><a  href="//integrity.mi.com/global"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'การปฏิบัติตามข้อบังคับและจริยธรรม'_click' , '//integrity.mi.com/global']);">การปฏิบัติตามข้อบังคับและจริยธรรม</a></dd>          </dl>
+          <dl class="span3">
+            <dt>ติดต่อเรา</dt>
+            <dd><a  href=" //c.mi.com/th/"  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Mi Community'_click' , ' //c.mi.com/th/']);">Mi Community</a></dd><dd><a  href="https://www.facebook.com/thailand.xiaomi"  target="_blank" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Facebook'_click' , 'https://www.facebook.com/thailand.xiaomi']);">Facebook</a></dd><dd><a  href="https://www.instagram.com/thailand.xiaomi/ "  target="_self" onclick="_msq.push(['trackEvent', 'event', 'index', '-footer-'Instagram'_click' , 'https://www.instagram.com/thailand.xiaomi/ ']);">Instagram</a></dd>          </dl>
+
+
+
+
+
+
+                  </div>
+      </div>
+    </div>
+        <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          Copyright © 2010 - 2019 Xiaomi. All Rights Reserved        </div>
+
+                <div id="J_siteSwitch" class="site-switch">
+          <a id="J_siteSwitchHandle" href="javascript:void(0)">Change Location<i class="iconfont-arrowright-s-16"></i></a>
+          <div class="sites-list" id="J_sitesList">
+            <ul>
+              <li><a href="//www.mi.com/index.html" >Mainland China 简体中文</a></li><li><a href="//www.mi.com/hk/" >Hong Kong 繁體中文</a></li><li><a href="//www.mi.com/tw/" >Taiwan 繁體中文</a></li><li><a href="//www.mi.com/sg/" >Singapore</a></li><li><a href="//www.mi.com/my/" >Malaysia</a></li><li><a href="//www.mi.com/ph/" >Philippines </a></li><li><a href="//www.mi.com/bd/" >Bangladesh</a></li><li><a href="//www.mi.com/in/" >India</a></li><li><a href="//www.mi.com/np" >Nepal</a></li><li><a href="//www.mi.com/id/" >Indonesia</a></li><li><a href="//www.mi.com/it/" >Italy</a></li><li><a href="//www.mi.com/fr/" >France</a></li><li><a href="//www.mi.com/mea/" >Middle East and Africa</a></li><li><a href="//www.mi.com/pl/" >Poland</a></li><li><a href="//www.mi.com/ru/" >Russia</a></li><li><a href="//www.mi.com/ua/" >Ukraine</a></li><li><a href="//www.mi.com/vn/" >Vietnam</a></li><li><a href="//www.mi.com/mx/" >Mexico</a></li><li><a href="//www.mi.com/kr/" >Korea</a></li><li><a href="//www.mi.com/eg/" >Egypt</a></li><li><a href="//www.mi.com/th/" >Thailand</a></li><li><a href="//www.mi.com/es/" >Spain</a></li><li><a href="//www.mi.com/us" >United States</a></li><li><a href="//www.mi.com/uk" >United Kingdom</a></li><li><a href="//www.mi.com/global/" >Global Home</a></li>            </ul>
+          </div>
+        </div>
+              </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal hide fade xm-dm-queue" id="xmDmQueue">
+  <a type="button" data-dismiss="modal" aria-hidden="true" class="modalclose iconfont">&#xe92b;</a>
+  <div class="modal-body">
+    <h3>คุณอยู่ในสาย...</h3>
+    <p class="queue-tip">ขณะนี้มีผู้คนจำนวนมากวิ่งเข้ามา กรุณาอยู่กับเรา</p>
+    <div class="queue-animate">
+      <div id="mituWalking" class="mitu-walk"></div>
+      <div class="animate-mask animate-mask-left"></div>
+      <div class="animate-mask animate-mask-right"></div>
+    </div>
+  </div>
+</div>
+<div id="xmDmError" class="modal hide fade xm-dm-error">
+  <a type="button" data-dismiss="modal" aria-hidden="true" class="modalclose iconfont">&#xe92b;</a>
+  <div class="modal-body">
+    <h3>โอ้ ไม่นะ! เราติดอยู่!</h3>
+    <p class="error-tip">มีผู้คนจำนวนมากเกินไปในขณะนี้ โปรดลองอีกครั้งในภายหลัง</p>
+    <p>
+      <a class="btn btn-orange" id="xmDmReload">ลองอีกครั้ง</a>
+    </p>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  var GLOBAL_CONFIG = {
+    goeventurl: '//hd.c.mi.com/th',
+    wwwSite: '//www.mi.com/th',
+    damiaoSite: "",
+    orderSite: "//buy.mi.com/th",
+    httpsOrderSite: "//buy.mi.com/th",
+    protocol: "",
+    damiaoGoodsId:[],
+    prsSite: "",
+    recSite: "//rec.store.mi.com/",
+    goUrl: "//in-go.buy.mi.com/th",
+    privacyAllow:true,
+    uploadUrl : "//upload.global.mi.com",
+    appLocal: {
+      name: "th",
+      id: "",
+      xmst: "0",
+      isUploadGA: "1"
+    }
+  }
+  ;
+
+  xiaomi = new Xiaomi(GLOBAL_CONFIG);
+  xiaomi.logonUser();
+
+
+  // Xiaomi.search.init();
+</script>
+
+<script type="text/javascript" src="//s01.appmifile.com/js/th/index.js?b0111b2"></script>
+
+
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=&ev=PageView&noscript=1">
+</noscript>
+
+
+
+
+
+
+<script type="text/javascript">
+  var _msq = _msq || [],
+      idc = 'th';
+
+  _msq.push(['setDomainId', 564]);
+  _msq.push(['trackPageView']);
+  (function() {
+    var ms = document.createElement('script');
+    ms.type = 'text/javascript';
+    ms.async = true;
+    idc === 'in' ? ms.src = "//s01.appmifile.com/stat/xmst-in.js" : ms.src = '//i01.appmifile.com/webfile/globalweb/stat/js/xmst-sg.js?v=20180712';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ms, s);
+  })();
+</script>
+<script async src="//s01.appmifile.com/stat/autotrack.js"></script>
+</body>
+</html>
+

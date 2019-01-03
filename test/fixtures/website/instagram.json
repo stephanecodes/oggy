@@ -1,0 +1,40 @@
+{
+  "initialUrl": "https://www.instagram.com/?hl=en",
+  "metadata": {
+    "title": "Instagram",
+    "description": "Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.",
+    "siteName": "Instagram",
+    "image": "/static/images/ico/favicon-200.png/ab6eff595bb1.png",
+    "url": "https://instagram.com/",
+    "icon": "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png",
+    "locale": "en"
+  },
+  "parsedData": {
+    "og": {
+      "site_name": "Instagram",
+      "title": "Instagram",
+      "image": "/static/images/ico/favicon-200.png/ab6eff595bb1.png",
+      "url": "https://instagram.com/"
+    },
+    "twitter": {},
+    "other_meta": {
+      "robots": "noimageindex, noarchive",
+      "mobile-web-app-capable": "yes",
+      "theme-color": "#000000",
+      "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+      "al:ios:app_name": "Instagram",
+      "al:ios:app_store_id": "389801252",
+      "al:ios:url": "instagram://mainfeed",
+      "al:android:app_name": "Instagram",
+      "al:android:package": "com.instagram.android",
+      "al:android:url": "https://www.instagram.com/_n/mainfeed/",
+      "fb:app_id": "124024574287414",
+      "description": "Create an account or log in to Instagram - A simple, fun &amp; creative way to capture, edit &amp; share photos, videos &amp; messages with friends &amp; family."
+    },
+    "misc": {
+      "locale": "en",
+      "icon": "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+    }
+  },
+  "time": 225
+}

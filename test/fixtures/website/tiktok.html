@@ -1,0 +1,309 @@
+<!DOCTYPE html><html><head><script src="//s0.ipstatp.com/static_magic/toutiao/monitor/sdk/slardar.js"></script><script src="//cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script><script src="//s0.ipstatp.com/static_magic/pgc/tech/collect/collect-v.3.1.29.js"></script>  <meta name="Baiduspider" content="noarchive"><title>TikTok - Make Every Second Count</title><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="google-site-verification" content="u4UMw2Yaw9Z-vvhbuC8Fzh2adtV3jqudeCVAjcGSTpo"><meta name="keywords" content="TikTok, Tik Tok, musically, mobile video, short-form video"><meta name="description" content="TikTok is the destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos."><meta name="Baiduspider" content="noarchive"><link rel="shortcut icon" href="//s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/favicon_v2_7145ff0.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1"><link rel="dns-prefetch" href="//s16.tiktokcdn.com/"><link rel="dns-prefetch" href="//s16a.tiktokcdn.com/"><link rel="dns-prefetch" href="//s16b.tiktokcdn.com/"><meta name="naver-site-verification" content="294af4876c1c2ff0109e094f9051b61813066fc8"><meta property="og:type" content="website"><meta property="og:title" content="TikTok - video social network"><meta property="og:description" content="TikTok is a destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos."><meta property="og:image" content="http://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/logo_icon_v2_40f12f4.png"><meta property="og:url" content="https://www.tiktok.com/">  <link rel="alternate" hreflang="ja" href="https://www.tiktok.com/jp/"><link rel="alternate" hreflang="ko" href="https://www.tiktok.com/kr/"><link rel="alternate" hreflang="x-default" href="https://www.tiktok.com/">   <script>function whichOsName() {
+    var ua = navigator.userAgent;
+    if((/android/i).test(ua)){
+        return "android"
+    }
+    if((/iPhone|iPad|iPod|iOS/i).test(ua)){
+        return "ios"
+    }
+    if ((/\(Macintosh\; Intel /).test(ua)) {
+        return 'mac';
+    }
+    if (/Win\d{2}|Windows/.test(ua)) {
+        return 'windows';
+    }
+    return "unknown"
+}
+
+function getUserType() {
+    var ua = navigator.userAgent;
+    var userType = 'user';
+    if (ua.match(/google/gi)) {
+        userType = 'search';
+    }
+    return userType;
+}
+
+function getReferrer () {
+    var referrer = document.referrer;
+    var host = '';
+    var traffic_type = 'others';
+    if (URL) {
+        var url = {};
+        try {
+            url = new URL(referrer);
+        } catch (e) {
+            // console.log('parse url err', e);
+        }
+        host = url.host || '';
+    } else {
+        var url = referrer.match(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/);
+        host = url[4] || '';
+    }
+    if (host.match(/google/gi)) {
+        traffic_type = 'google';
+    }
+    if (host.match(/yahoo/gi)) {
+        traffic_type = 'yahoo';
+    }
+    if (host.match(/yandex/gi)) {
+        traffic_type = 'yandex';
+    }
+    if (host.match(/bing/gi)) {
+        traffic_type = 'bing';
+    }
+    return traffic_type;
+}
+
+function getBrowser() {
+    var ua = navigator.userAgent;
+    var chrome = ua.match(/Chrome\/([\d.]+)/) || ua.match(/CriOS\/([\d.]+)/),
+        webview = !chrome && ua.match(/(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/),
+        safari = webview || ua.match(/Version\/([\d.]+)([^S](Safari)|[^M]*(Mobile)[^S]*(Safari))/),
+        firefox = ua.match(/Firefox\/([\d.]+)/),
+        ucbrowser = ua.match(/ucbrowser/g),
+        opera = ua.match(/opera.([\d.]+)/);
+    if (chrome) {
+        return 'Chrome';
+    }
+    if (safari) {
+        return 'Safari';
+    }
+    if (firefox) {
+        return 'Firefox';
+    }
+    if (ucbrowser) {
+        return 'UCWEB';
+    }
+    if (opera) {
+        return 'Opera';
+    }
+    return 'unknown';
+}
+
+function getPlatform() {
+    var os = whichOsName();
+    var platform = 'unknown';
+    if (os === 'android' || os === 'ios') {
+        platform = 'wap';
+    }
+    if (os === 'mac' || os === 'windows') {
+        platform = 'web';
+    }
+    return platform;
+}
+
+function getPageSource() {
+    var name = window.pageName;
+    var pageType = 'others';
+    var pageName = 'unkonwn';
+    if (name === 'video') {
+        pageType = 'video';
+        pageName = 'reflow_video'
+    }
+    if (name === 'challenge') {
+        pageType = 'challenge';
+        pageName = 'reflow_challenge'
+    }
+    if (name === 'music') {
+        pageType = 'music';
+        pageName = 'reflow_music';
+    }
+    if (name === 'user') {
+        pageType = 'user';
+        pageName = 'reflow_user';
+    }
+    if (name === 'website_pc') {
+        pageType = 'website';
+        pageName = 'website_pc';
+    }
+    if (name === 'safety_pc') {
+        pageType = 'safety';
+        pageName = 'safety_pc';
+    }
+    if (name === 'creator') {
+        pageType = 'website';
+        pageName = 'creator';
+    }
+    if (name === 'newsroom') {
+        pageType = 'website';
+        pageName = 'newsroom';
+    }
+    if (name === 'recharge_index') {
+        pageType = 'website';
+        pageName = 'recharge_index';
+    }
+    return {
+        pageType,
+        pageName,
+    }
+}
+
+function qps() {
+    var queryStr = location.search.slice(1);
+    if (!queryStr) {
+        return {};
+    }
+    var aTemp = queryStr.split('&'), obj = {};
+
+    aTemp.forEach(function (param) {
+        var arr = param.split('=');
+        obj[arr[0]] = arr[1];
+    });
+    return obj;
+}</script><script type="text/javascript">window.locale = "en";
+    window.province="";
+    window.region="FR";
+    window.pageName='website_pc';</script>  <link rel="stylesheet" href="//s16.tiktokcdn.com/aweme/resource/web_i18n/static/style/base_05b834f.css">  <link rel="stylesheet" href="//s16b.tiktokcdn.com/aweme/resource/web_i18n/static/style/index_9ad6e32.css">  <script src="//s16b.tiktokcdn.com/aweme/resource/web_i18n/static/script/lib/core_2df11e6.js"></script>   <script>var gaAccount = window.AME_GA_ID || 'UA-75850242-9';
+
+var _gaq = _gaq || [];
+var gaqpush=function(){};
+var gaevent=function(){};
+var gapageview=function(){};
+var trackPV = gapageview;
+
+var sampleRate = 100;
+
+function initGA(){
+
+    if(sampleRate && gaAccount){
+        window.onerror = function(message, file, line) {
+            var msg = message,
+                f = file,
+                l = line;
+            if(typeof message === 'object') {
+                msg = message.message;
+                f = message.fileName;
+                l = message.lineNumber;
+            }
+            var sFormattedMessage = '[' + f + ' (' + l + ')]' + msg;
+            window.gaevent ? gaevent('Exceptions', sFormattedMessage, location.pathname + '::::' + navigator.userAgent) : '';
+        };
+
+        var test_channel = "",
+            test_version = "",
+            utm_source = "";
+
+        // var ua = navigator.userAgent;
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        // Replace with your property ID.
+        ga('create', gaAccount, {'sampleRate': sampleRate});
+
+        //Init GA Function
+        gapageview = function(pageName) {
+            ga('send', 'pageview', pageName);
+            console.log('ga:pageview', pageName);
+        };
+
+        gaqpush = function(ga_event, ga_label){
+            gaevent('event',ga_event,ga_label);
+        };
+
+        gaevent = function(category, action, label, value){
+            if(test_channel.indexOf(action) >-1) label = label+test_version;
+            console.log("ga:"+category+","+action+","+label);
+            if(category != 'event') {
+                ga('send', 'event', category, action, label, typeof value !== "undefined" ? value: 1);
+            }
+            if(typeof window.baevent == "function") {
+                baevent(category, action, label, value);
+            }
+        };
+
+        gapageview(window.PAGEVIEW_NAME);
+
+        $("html").on('click', '[ga_event]', function(e){
+            var $this =  $(this);
+            var ga_category = $this.attr('ga_category') || 'event';
+            var ga_event = $this.attr('ga_event');
+            var ga_label = $this.attr('ga_label');
+            gaevent(ga_category,ga_event,ga_label);
+            if($this.is('a')){
+                var href = $this.attr('href')||'', target = this.target;
+                if(!( href[0]==='#' || target === "_blank" || e.isDefaultPrevented())) {
+                    setTimeout(function(){
+                        location.href = href
+                    },400);
+                    return false
+                }
+            }
+        });
+    }
+}
+
+initGA();</script> <script>window.CONST = {"utm_campaign":"","utm_medium":"","utm_source":""} || {};
+        window._data = "" || {};
+        window._region = "FR" || "";
+        window._lang = "en" || "";</script></head><body>   <header class="J_Header header"><div class="header-container"><div class="logo-warpper"><a class="logo" id="logo" href="/"></a></div><div class="nav-warpper" id="downlist"><a href="/" id="home">Home</a> <a href="//newsroom.tiktok.com" target="_blank" id="newsroom">Newsroom</a> <a href="/creator/" id="creator">Creator</a> <a href="/recharge/" id="recharge">Recharge</a> <a href="https://musician.tiktok.com/mas" target="_blank" id="musician">Musician</a></div></div></header>   <div class="right-panel"><div class="content-box"><img src="//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/tiktok_logo.png" alt="TikTok" class="logo"><div class="content-header"><div class="content-header-desc"><p class="content-header-slogen">Make Every Second Count</p></div></div><div class="content-footer"><div class="download-btn-group"><a class="download-btn download-ios-btn" id="download_ios" data-role="iphone" target="_blank" href="" id="download_ios"><img src="//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/apple_icon.png" alt="apple-store"> </a><a class="download-btn download-android-btn" data-role="android" id="download_android" target="_blank" href="" id="download_android"><img src="//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/google_icon.png" alt="google-store"></a></div></div></div></div>    <footer class="footer"><div class="container"><div class="infomation-group"><ul><li><h2>Company</h2><a href="/i18n/about/">About TikTok</a> <a href="/i18n/contact/">Contact</a></li><li><h2>Community</h2><a href="http://support.tiktok.com/">Support</a> <a href="http://support.tiktok.com/?ht_kb=community-policy">Community Policy</a> <a href="/safety/" id="safety_center">Safety Center</a></li><li><h2>Legal</h2><a href="/i18n/terms/">Terms of Use</a> <a href="/i18n/privacy/">Privacy Policy</a> <a href="/i18n/law-enforcement/">Law Enforcement</a></li><li class="rest"><a href="/i18n/virtual-items/">Virtual Items</a> <a href="/i18n/copyright/">Copyright Policy</a> <a href="/i18n/open-source/">Open Source</a></li></ul><div class="info"><div><span>All Rights Reserved | TikTok</span></div><div class="language"><span>Language:</span><div class="language-wrap" id="languageWrap"><p>English</p><div class="language-list" id="lg-list"><a class="language-li" href="/kr/" id="language-kr">한국어</a> <a class="language-li" href="/jp/" id="language-jp">日本語</a> <a class="language-li" href="/vi/" id="language-jp">Tiếng Việt</a> <a class="language-li" href="/id/" id="language-jp">Indonesia</a></div></div></div></div></div><div class="follow-language"><div class="follow-us"><span>Follow us</span><ul><li><a class="follow-img-1" target="_blank" href="https://www.instagram.com/tiktok/"></a><p>Instagram</p></li><li><a class="follow-img-2" target="_blank" href="https://www.facebook.com/tiktok"></a><p>Facebook</p></li><li><a class="follow-img-3" target="_blank" href="https://www.twitter.com/tiktok_us"></a><p>Twitter</p></li><li><a class="follow-img-4" target="_blank" href="https://www.youtube.com/tiktok/"></a><p>Youtube</p></li></ul></div></div></div></footer><script>(function(){
+        var i18n_list = ['contact', 'terms', 'privacy', 'about']
+        var tab_list = ['home', 'newsroom', 'creator']
+        var index_path = location.pathname
+        var _path = location.href
+        var i_path = _path.split('/').slice(-2,-1).toString()
+        var RG = window._region;
+        if (RG == 'MY' || RG == 'MYS') {
+            $(".J_Header #musician").attr("href", 'https://musician.tiktok.com/mas');
+            $(".J_Header #musician").show();
+        } else if (RG == 'TW' || RG == 'TWN') {
+            $(".J_Header #musician").attr("href", 'https://musician.tiktok.com/zh-tw');
+            $(".J_Header #musician").show();
+        } else {
+            $(".J_Header #musician").hide();
+        }
+        if (RG == 'US' || RG == 'USA') {
+            $(".J_Header #creator").show();
+        }
+        if (RG == 'DE') {
+            $("#safety_center").text("Sicherheits-Center");
+            $("#safety_center").attr("href", '/de/safety/');
+        }
+        $("#downlist").css("margin-left", -$("#downlist").width()/2)
+        $("#newsroom").click(function() {
+            window.collectEvent('tap', {
+                target: 'newsroom',
+                page_name: "website_pc"
+            });
+        })
+        if (i18n_list.indexOf(i_path) !== -1) {
+            document.getElementById('language-kr').href = '/kr/'+ i_path +'/'
+            document.getElementById('language-jp').href = '/jp/'+ i_path +'/'
+        }
+        if (index_path.indexOf('safety') !== -1) {
+            document.getElementById('language-jp').href = '/jp'+ index_path
+        }
+        if (tab_list.indexOf(i_path) !== -1) {
+            var tab = $("#"+i_path);
+            tab.css('color', '#0af2ea');
+            tab.css('opacity', '1');
+        }
+        $("#languageWrap,#lg-list").mouseenter(function () {
+            $("#lg-list").stop(true,true).animate({height:"120px"});
+        });
+        $("#languageWrap").mouseleave(function() {
+            $("#lg-list").stop(true,true).animate({height:"0"});
+        });
+        if (/^\/recharge/.test(location.pathname)) {
+            $(".J_Header #recharge").show();
+        } else {
+            $(".J_Header #recharge").hide();
+        }
+    })();</script>   <script>var tags = {};
+        if (window.Slardar && window.Slardar._baseParams) {
+            tags = {
+                bid: window.Slardar._baseParams.bid,
+                pid: window.Slardar._baseParams.pid
+            }
+        }
+        window.Raven && window.Raven.config('//ad57a8eab70e447ab8903ff47e7923fa@aliva-sentry.byteoversea.com/15', {
+            environment: 'dev'
+        }).install()</script><script src="//s16b.tiktokcdn.com/aweme/resource/web_i18n/page/website_en/index/index_92aee53.js"></script>
+<script type="text/javascript">
+(function() { require('web_i18n:page/website_en/index/index'); 
+})();
+</script>
+</body></html>

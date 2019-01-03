@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "title": "Basic boilerplate",
+    "description": "Basic template description",
+    "locale": "en",
+    "siteName": "stephanecodes.github.io"
+  },
+  "parsedData": {
+    "og": {},
+    "twitter": {},
+    "other_meta": {
+      "description": "Basic template description"
+    },
+    "misc": {
+      "title": "Basic boilerplate",
+      "locale": "en"
+    }
+  },
+  "time": 3036
+}

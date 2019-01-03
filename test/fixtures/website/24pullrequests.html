@@ -1,0 +1,1319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en" xmlns:fb="http://http://www.facebook.com/2008/fbml" xmlnsns:og="http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e8305160cc","applicationID":"1555576","transactionName":"JVhbRkIJCloAE0lAQAdDXFEfDglbABEHVFE=","queueTime":2,"applicationTime":1199,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <!-- Facebook open graph api
+  -->
+  <meta content="24 Pull Requests" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://24pullrequests.com/" property="og:url"/>
+  <meta content="https://24pullrequests.com/assets/24-pr-open-graph-0ad2b46ed9df31978f2cf408e1355a392217eed4d75f80d7ed8f41b64b4891c7.png" property="og:image"/>
+  <meta content="24 Pull Requests is a yearly initiative to encourage contributors around the world to send 24 pull requests between December 1st and December 24th." property="og:description"/>
+  <!-- Twitter card
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@24pullrequests">
+  <meta name="twitter:creator" content="@teabass">
+  <meta name="twitter:title" content="24 Pull Requests">
+  <meta name="twitter:description" content="24 Pull Requests is a yearly initiative to encourage contributors around the world to send 24 pull requests between December 1st and December 24th.">
+  <meta name="twitter:image" content="https://24pullrequests.com/assets/24-pr-open-graph-0ad2b46ed9df31978f2cf408e1355a392217eed4d75f80d7ed8f41b64b4891c7.png">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    24 Pull Requests
+  </title>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EgFCxASprD/ZoxysD+u9yTM1IuMsQlkH9MJz5cZFoNtcucsWkIlkPTUXlLSK3KISyCcriOrTEi2V56yQtQ5CIw==" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="all" href="/assets/application-87b4a91d24302c216758f579bc3a9f57a252119a418abba8528710846290f0c6.css" />
+  <link rel="stylesheet" media="all" href="//openlayers.org/en/v3.20.1/css/ol.css" />
+  <script src="//openlayers.org/en/v3.20.1/build/ol.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <script>
+    document.documentElement.className =
+    document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <!--  For third-generation iPad with high-resolution Retina display:
+  -->
+  <!--  Size should be 144 x 144 pixels
+  -->
+  <link rel="apple-touch-icon-precomposed" type="image/png" href="/assets/apple-touch-icon-144x144-precomposed-94676a80530ab342101faa6014b3af726daa7e63889a2073c5a42e081e2faaca.png" sizes="144x144" />
+  <!-- For iPhone with high-resolution Retina display:
+  -->
+  <!-- Size should be 114 x 114 pixels
+  -->
+  <link rel="apple-touch-icon-precomposed" type="image/png" href="/assets/apple-touch-icon-114x114-precomposed-fba7225f85e97c431b911f7f25eb0004340288ae40d01cfd60bb82ded32e103d.png" sizes="114x114" />
+  <!-- For first- and second-generation iPad:
+  -->
+  <!-- Size should be 72 x 72 pixels
+  -->
+  <link rel="apple-touch-icon-precomposed" type="image/png" href="/assets/apple-touch-icon-72x72-precomposed-a12e0a89f044e2d0f2c465ac696d94e3cc1c520fd41ce40405e3f86474b2c25b.png" sizes="72x72" />
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:
+  -->
+  <!-- Size should be 57 x 57 pixels
+  -->
+  <link rel="apple-touch-icon-precomposed" type="image/png" href="/assets/apple-touch-icon-precomposed-1f8cb74799e01ecc92b795fbd0b7cd31362d2fe31506b3baa6e5279df2770432.png" />
+  <!-- For all other devices
+  -->
+  <!-- Size should be 32 x 32 pixels
+  -->
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-58b13b420d7d1375ec8fa826c2416b7996c9defd69118d6c3ed3ea4c1be8c392.ico" />
+<script type="text/javascript">
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-265870-31', {});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ga('send', 'pageview');
+
+
+</script></head>
+
+  <body>
+    <div class="container-fluid">
+      
+  <div id="fb-root"></div>
+  <script>
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+  </script>
+
+        <svg class="svg-snow" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin">
+  <g>
+    <circle class="snow snow-1" cx="500" cy="8"  r="1" />
+    <circle class="snow snow-2" cx="200" cy="3"  r="2" />
+    <circle class="snow snow-3" cx="900" cy="5"  r="3" />
+    <circle class="snow snow-4" cx="100" cy="3"  r="4" />
+    <circle class="snow snow-5" cx="400" cy="5"  r="5" />
+    <circle class="snow snow-6" cx="300" cy="8"  r="6" />
+    <circle class="snow snow-7" cx="700" cy="14" r="7" />
+    <circle class="snow snow-8" cx="600" cy="14" r="8" />
+    <circle class="snow snow-9" cx="800" cy="14" r="9" />
+    <circle class="snow-end snow-end-1" cx="500" cy="8"  r="1" />
+    <circle class="snow-end snow-end-2" cx="200" cy="3"  r="2" />
+    <circle class="snow-end snow-end-3" cx="900" cy="5"  r="3" />
+    <circle class="snow-end snow-end-4" cx="100" cy="3"  r="4" />
+    <circle class="snow-end snow-end-5" cx="400" cy="5"  r="5" />
+    <circle class="snow-end snow-end-6" cx="300" cy="8"  r="6" />
+    <circle class="snow-end snow-end-7" cx="700" cy="14" r="7" />
+    <circle class="snow-end snow-end-8" cx="600" cy="14" r="8" />
+    <circle class="snow-end snow-end-9" cx="800" cy="14" r="9" />
+  </g>
+</svg>
+
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="/"><img alt="24 Pull Requests" src="/assets/logo-8a77737f86fec8def19a1c9a605c9841dbd44e59f243ed3bf64bbdf3214d6fa1.png" /></a>
+          </div>
+            <div class="tagline hidden-phone"></div>
+        </div>
+      </header>
+      <a class="github-corner" href="https://github.com/24pullrequests/24pullrequests">
+        <svg height="80" style="fill:#fff; color:#a63636; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" viewBox="0 0 250 250" width="80">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;"></path>
+          <path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path>
+        </svg>
+      </a>
+      <article class="container" id="main" role="main">
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </article>
+        <div class="container block intro">
+    <div class="row">
+      <div class="text-center">
+  <h1>Happy Holidays!</h1>
+  <img width="700" class="thanks" src="/assets/finished-d971149b597e668410addba560985ff157492af571a64cf9605b1baefa462054.png" />
+</div>
+
+<div class="alert alert-info">
+  <h2>
+    24 Pull Requests is finished for
+    2018
+  </h2>
+  <p>
+    In 2018, over 24 days,
+    <b>
+      1,364
+    </b>
+    contributors submitted
+    <b>
+      7,759
+    </b>
+    contributions to
+    <b>
+      3,321
+    </b>
+    different open source projects.
+  </p>
+  <p>
+    Happy Holidays and see you all next year when we do it all again!
+  </p>
+  <hr/>
+  <p>
+    Want to help out with open source projects in the meantime? Check out these other great initiatives:
+  </p>
+  <h4>
+    <a href="https://www.codetriage.com/">CodeTriage</a>
+  </h4>
+  <p>
+    Give back to open source, one issue at a time, with CodeTriage. You’ll get one issue from your favorite repo per day to help you dig deeper, learn more, and stay involved with the code you rely on.
+  </p>
+  <h4>
+    <a href="http://issuehub.io/">issuehub.io</a>
+  </h4>
+  <p>
+    Contribute to Open Source. Search issue labels to find the right project for you!
+  </p>
+  <h4>
+    <a href="http://www.pullrequestroulette.com/">Pull Request Roulette</a>
+  </h4>
+  <p>Find open source pull requests that need a reviewer before merging.</p>
+  <hr/>
+  See you on
+  <strong>December 1st, 2019</strong>,
+  Happy Hacking!
+</div>
+
+    </div>
+
+  <div class="row">
+    <div class="col-md-4 intro-block">
+      <svg height="60" class="octicon octicon-gift" viewBox="0 0 14 16" version="1.1" width="52" aria-hidden="true"><path fill-rule="evenodd" d="M13 4h-1.38c.19-.33.33-.67.36-.91.06-.67-.11-1.22-.52-1.61C11.1 1.1 10.65 1 10.1 1h-.11c-.53.02-1.11.25-1.53.58-.42.33-.73.72-.97 1.2-.23-.48-.55-.88-.97-1.2-.42-.32-1-.58-1.53-.58h-.03c-.56 0-1.06.09-1.44.48-.41.39-.58.94-.52 1.61.03.23.17.58.36.91H1.98c-.55 0-1 .45-1 1v3h1v5c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V8h1V5c0-.55-.45-1-1-1H13zm-4.78-.88c.17-.36.42-.67.75-.92.3-.23.72-.39 1.05-.41h.09c.45 0 .66.11.8.25s.33.39.3.95c-.05.19-.25.61-.5 1h-2.9l.41-.88v.01zM4.09 2.04c.13-.13.31-.25.91-.25.31 0 .72.17 1.03.41.33.25.58.55.75.92L7.2 4H4.3c-.25-.39-.45-.81-.5-1-.03-.56.16-.81.3-.95l-.01-.01zM7 12.99H3V8h4v5-.01zm0-6H2V5h5v2-.01zm5 6H8V8h4v5-.01zm1-6H8V5h5v2-.01z"/></svg>
+      <h4>
+        ’Tis the season
+      </h4>
+      <p>
+        You’ve been benefiting from the use of open source projects all year. Now is the time to say thanks to the maintainers of those projects, and a little birdy tells me that they love receiving contributions!
+      </p>
+    </div>
+    <div class="col-md-4 intro-block">
+      <svg height="60" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="45" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <h4>
+        Get involved
+      </h4>
+      <p>
+        There are lots of ways to get involved in an open source project: improving docs, designs or existing code, supporting other users, fixing, replicating or triaging issues and bugs, or adding missing features.
+      </p>
+      <p>
+        New to open source?  <a href="/contributing">Here&#39;s our primer</a>.
+      </p>
+    </div>
+    <div class="col-md-4 intro-block">
+      <svg height="60" class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="60" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 0 0 0 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"/></svg>
+
+      <h4>
+        Build your profile
+      </h4>
+      <p>
+        Contributing to open source projects is also a great way to build your profile in the community and improve your CV.
+      </p>
+      <p>
+        It’s really easy to get started. Even small contributions can be really valuable to a project.
+      </p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="cta-block">
+          <a class="btn cta" href="/login">
+            <svg height="16" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            <strong>
+              Log in with GitHub
+            </strong>
+</a>        </div>
+        <div class="row social-buttons">
+  <div class="col-sm-2">
+    <a class="twitter-share-button" data-hashtags="24pr" data-text="24 Pull Requests - Giving back to open source for the holidays" data-via="24pullrequests" href="https://twitter.com/share">Tweet</a>
+    <script>
+
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+    </script>
+  </div>
+  <div class="col-sm-2">
+    <div class="fb-like" data-layout="button_count" data-send="false" data-show-faces="false" data-width="450"></div>
+  </div>
+  <div class="col-sm-2">
+    <iframe src="https://ghbtns.com/github-btn.html?user=24pullrequests&repo=24pullrequests&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+  </div>
+  <div class="col-sm-2">
+    <iframe src="https://ghbtns.com/github-btn.html?user=24pullrequests&repo=24pullrequests&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  </div>
+  <div class="col-sm-2">
+    <a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/24pullrequests">Follow @24PullRequests</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+</div>
+<div class="container tips">
+  <div class="row">
+    <div class="col-md-4 tip-block">
+      <h4 class="subtitle">
+        <span class="octicon-circle">
+          <svg height="20" class="octicon octicon-radio-tower" viewBox="0 0 16 16" version="1.1" width="20" aria-hidden="true"><path fill-rule="evenodd" d="M4.79 6.11c.25-.25.25-.67 0-.92-.32-.33-.48-.76-.48-1.19 0-.43.16-.86.48-1.19.25-.26.25-.67 0-.92a.613.613 0 0 0-.45-.19c-.16 0-.33.06-.45.19-.57.58-.85 1.35-.85 2.11 0 .76.29 1.53.85 2.11.25.25.66.25.9 0zM2.33.52a.651.651 0 0 0-.92 0C.48 1.48.01 2.74.01 3.99c0 1.26.47 2.52 1.4 3.48.25.26.66.26.91 0s.25-.68 0-.94c-.68-.7-1.02-1.62-1.02-2.54 0-.92.34-1.84 1.02-2.54a.66.66 0 0 0 .01-.93zm5.69 5.1A1.62 1.62 0 1 0 6.4 4c-.01.89.72 1.62 1.62 1.62zM14.59.53a.628.628 0 0 0-.91 0c-.25.26-.25.68 0 .94.68.7 1.02 1.62 1.02 2.54 0 .92-.34 1.83-1.02 2.54-.25.26-.25.68 0 .94a.651.651 0 0 0 .92 0c.93-.96 1.4-2.22 1.4-3.48A5.048 5.048 0 0 0 14.59.53zM8.02 6.92c-.41 0-.83-.1-1.2-.3l-3.15 8.37h1.49l.86-1h4l.84 1h1.49L9.21 6.62c-.38.2-.78.3-1.19.3zm-.01.48L9.02 11h-2l.99-3.6zm-1.99 5.59l1-1h2l1 1h-4zm5.19-11.1c-.25.25-.25.67 0 .92.32.33.48.76.48 1.19 0 .43-.16.86-.48 1.19-.25.26-.25.67 0 .92a.63.63 0 0 0 .9 0c.57-.58.85-1.35.85-2.11 0-.76-.28-1.53-.85-2.11a.634.634 0 0 0-.9 0z"/></svg>
+        </span>
+        Events
+      </h4>
+      <p>
+        This year we are encouraging organisers around the world to hold 24 Pull Requests hack events. Get involved this holiday season.
+      </p>
+      <a class="btn btn-primary" href="/events">View events</a>
+      <a class="btn btn-default" href="/events/new">Host an event</a>
+    </div>
+    <div class="col-md-4 tip-block">
+      <h4 class="subtitle">
+        <span class="octicon-circle">
+          <svg height="20" class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="17" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+        </span>
+        Questions &amp; Answers
+      </h4>
+      <p>
+        Join the chat on Gitter, <a href="https://gitter.im/24pullrequests/24pullrequests">24pullrequests/24pullrequests</a>.
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="container featured_projects">
+    <div class="row">
+      <div class="block">
+        <div class="title-block">
+          <svg class="octicon octicon-repo mega-octicon" height="40" viewBox="0 0 12 16" version="1.1" width="30" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+          <h3 class="block-title">
+            Featured Projects
+          </h3>
+        </div>
+        <div class="project ruby" data-id="1934">
+    <a rel="tooltip" data-original-title="Octobox" class="image" href="https://github.com/octobox/octobox"><img width="80" height="80" src="https://github.com/octobox.png" /></a>
+  <div class="language label label-info pull-right">
+    <a href="/languages/ruby">Ruby</a>
+  </div>
+  <a target="_blank" title="octobox/octobox" class="project-link" href="https://github.com/octobox/octobox">
+    <span class="project-title">
+      Octobox
+    </span>
+    <p class="js-emoji">
+      :postbox: Take back control of your GitHub Notifications
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/design">design</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/tests">tests</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/help-wanted">help-wanted</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/octobox/octobox/labels/bug">bug</a>
+    </div>
+</div>
+<div class="project csharp" data-id="1537">
+    <a rel="tooltip" data-original-title="Cake" class="image" href="https://github.com/cake-build/cake"><img width="80" height="80" src="https://avatars2.githubusercontent.com/u/7738262?v=3" /></a>
+  <div class="language label label-info pull-right">
+    <a href="/languages/c%23">C#</a>
+  </div>
+  <a target="_blank" title="cake-build/cake" class="project-link" href="https://github.com/cake-build/cake">
+    <span class="project-title">
+      Cake
+    </span>
+    <p class="js-emoji">
+      Cake (C# Make) is a cross platform build automation system.
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/cake-build/cake/labels/good first issue">good first issue</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/cake-build/cake/labels/refactoring">refactoring</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/cake-build/cake">Contribulator score: 44</a>
+    </div>
+</div>
+<div class="project ruby" data-id="797">
+    <a rel="tooltip" data-original-title="exercism" class="image" href="http://24pullrequests.exercism.io/"><img width="80" height="80" src="https://avatars.githubusercontent.com/u/5624255?v=3" /></a>
+  <div class="language label label-info pull-right">
+    <a href="/languages/ruby">Ruby</a>
+  </div>
+  <a target="_blank" title="exercism/exercism.io" class="project-link" href="http://24pullrequests.exercism.io/">
+    <span class="project-title">
+      exercism
+    </span>
+    <p class="js-emoji">
+      Exercism is a community around crowd-sourced code reviews. The core is in Ruby but exercises appear in all languages.
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="http://24pullrequests.exercism.io//labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="http://24pullrequests.exercism.io//labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="http://24pullrequests.exercism.io//labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="http://24pullrequests.exercism.io//labels/refactoring">refactoring</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/exercism/exercism.io">Contribulator score: 18</a>
+    </div>
+</div>
+<div class="project ruby" data-id="1797">
+    <a rel="tooltip" data-original-title="Hanami" class="image" href="https://github.com/hanami/hanami"><img width="80" height="80" src="https://avatars3.githubusercontent.com/u/3210273?v=3" /></a>
+  <div class="language label label-info pull-right">
+    <a href="/languages/ruby">Ruby</a>
+  </div>
+  <a target="_blank" title="hanami/hanami" class="project-link" href="https://github.com/hanami/hanami">
+    <span class="project-title">
+      Hanami
+    </span>
+    <p class="js-emoji">
+      Modern full stack web framework for Ruby
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/tests">tests</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/help-wanted">help-wanted</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/beginner">beginner</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/hanami/hanami/labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/hanami/hanami">Contribulator score: 39</a>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row avatar-block">
+    <div class="col-md-6 two-up-split left">
+      <div class="block">
+        <h3 class="block-title">
+          24,661
+          Contributors already involved
+        </h3>
+        <p>
+          Join everyone here and make open source better.
+        </p>
+        <a class="btn btn-default btn-sm" href="/users">View All</a>
+        <ul class="avatar-list avatar-list-lg clearfix">
+          <li class="avatar-cell">
+  <a class="avatar-link" href="/users/rishichawda">
+    <img alt="rishichawda" class="avatar-img" src="https://avatars.githubusercontent.com/u/26366288?size=200" />
+    <div class="username">rishichawda</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      29
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/Danielhu229">
+    <img alt="Danielhu229" class="avatar-img" src="https://avatars.githubusercontent.com/u/9318936?size=200" />
+    <div class="username">Danielhu229</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/mickaelandrieu">
+    <img alt="mickaelandrieu" class="avatar-img" src="https://avatars.githubusercontent.com/u/1247388?size=200" />
+    <div class="username">mickaelandrieu</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      3
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/syaffers">
+    <img alt="syaffers" class="avatar-img" src="https://avatars.githubusercontent.com/u/2733370?size=200" />
+    <div class="username">syaffers</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/Shivansh2407">
+    <img alt="Shivansh2407" class="avatar-img" src="https://avatars.githubusercontent.com/u/42182955?size=200" />
+    <div class="username">Shivansh2407</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      26
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/dreampiggy">
+    <img alt="dreampiggy" class="avatar-img" src="https://avatars.githubusercontent.com/u/6919743?size=200" />
+    <div class="username">dreampiggy</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/kaiwensun">
+    <img alt="kaiwensun" class="avatar-img" src="https://avatars.githubusercontent.com/u/18455693?size=200" />
+    <div class="username">kaiwensun</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      8
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/kush-mish">
+    <img alt="kush-mish" class="avatar-img" src="https://avatars.githubusercontent.com/u/36705914?size=200" />
+    <div class="username">kush-mish</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/gkarthiks">
+    <img alt="gkarthiks" class="avatar-img" src="https://avatars.githubusercontent.com/u/30545166?size=200" />
+    <div class="username">gkarthiks</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/clarkdo">
+    <img alt="clarkdo" class="avatar-img" src="https://avatars.githubusercontent.com/u/4312154?size=200" />
+    <div class="username">clarkdo</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      9
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/kev112">
+    <img alt="kev112" class="avatar-img" src="https://avatars.githubusercontent.com/u/5350036?size=200" />
+    <div class="username">kev112</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/ScottBrenner">
+    <img alt="ScottBrenner" class="avatar-img" src="https://avatars.githubusercontent.com/u/416477?size=200" />
+    <div class="username">ScottBrenner</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      3
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/amirmasoudabdol">
+    <img alt="amirmasoudabdol" class="avatar-img" src="https://avatars.githubusercontent.com/u/1290841?size=200" />
+    <div class="username">amirmasoudabdol</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/mlazaric">
+    <img alt="mlazaric" class="avatar-img" src="https://avatars.githubusercontent.com/u/3049847?size=200" />
+    <div class="username">mlazaric</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/hangy">
+    <img alt="hangy" class="avatar-img" src="https://avatars.githubusercontent.com/u/87124?size=200" />
+    <div class="username">hangy</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      11
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/froi">
+    <img alt="froi" class="avatar-img" src="https://avatars.githubusercontent.com/u/1918027?size=200" />
+    <div class="username">froi</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      10
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/StephenHogsten">
+    <img alt="StephenHogsten" class="avatar-img" src="https://avatars.githubusercontent.com/u/29378267?size=200" />
+    <div class="username">StephenHogsten</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/gopavasanth">
+    <img alt="gopavasanth" class="avatar-img" src="https://avatars.githubusercontent.com/u/30266744?size=200" />
+    <div class="username">gopavasanth</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      5
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/jGaboardi">
+    <img alt="jGaboardi" class="avatar-img" src="https://avatars.githubusercontent.com/u/8590583?size=200" />
+    <div class="username">jGaboardi</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      25
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/Glutnix">
+    <img alt="Glutnix" class="avatar-img" src="https://avatars.githubusercontent.com/u/88983?size=200" />
+    <div class="username">Glutnix</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/jgribonvald">
+    <img alt="jgribonvald" class="avatar-img" src="https://avatars.githubusercontent.com/u/1597283?size=200" />
+    <div class="username">jgribonvald</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      6
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/HefnerK">
+    <img alt="HefnerK" class="avatar-img" src="https://avatars.githubusercontent.com/u/45883591?size=200" />
+    <div class="username">HefnerK</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/romankl">
+    <img alt="romankl" class="avatar-img" src="https://avatars.githubusercontent.com/u/1848357?size=200" />
+    <div class="username">romankl</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      6
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/users/Eventyret">
+    <img alt="Eventyret" class="avatar-img" src="https://avatars.githubusercontent.com/u/977232?size=200" />
+    <div class="username">Eventyret</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 two-up-split right">
+      <div class="block">
+        <h3 class="block-title">
+          20,340 Organisations involved
+        </h3>
+        <p>
+          Invite more people from your organisation to participate.
+        </p>
+        <a class="btn btn-default btn-sm" href="/organisations">View All</a>
+        <ul class="avatar-list avatar-list-lg clearfix">
+          <li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/SoftwareAG">
+    <img alt="SoftwareAG" class="avatar-img" src="https://avatars.githubusercontent.com/u/1233761?size=160" />
+    <div class="username">@SoftwareAG</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/Shotbow">
+    <img alt="Shotbow" class="avatar-img" src="https://avatars.githubusercontent.com/u/6589241?size=160" />
+    <div class="username">@Shotbow</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/Softwire">
+    <img alt="Softwire" class="avatar-img" src="https://avatars.githubusercontent.com/u/3440218?size=160" />
+    <div class="username">@Softwire</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      68
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/firstcontributions">
+    <img alt="firstcontributions" class="avatar-img" src="https://avatars.githubusercontent.com/u/37713493?size=160" />
+    <div class="username">@firstcontributions</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/fedorahungary">
+    <img alt="fedorahungary" class="avatar-img" src="https://avatars.githubusercontent.com/u/3807446?size=160" />
+    <div class="username">@fedorahungary</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/JankariTech">
+    <img alt="JankariTech" class="avatar-img" src="https://avatars.githubusercontent.com/u/26428913?size=160" />
+    <div class="username">@JankariTech</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      49
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/sugarlabs">
+    <img alt="sugarlabs" class="avatar-img" src="https://avatars.githubusercontent.com/u/3996398?size=160" />
+    <div class="username">@sugarlabs</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      6
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/24pullrequests">
+    <img alt="24pullrequests" class="avatar-img" src="https://avatars.githubusercontent.com/u/7920922?size=160" />
+    <div class="username">@24pullrequests</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/rubocop-jp">
+    <img alt="rubocop-jp" class="avatar-img" src="https://avatars.githubusercontent.com/u/33586927?size=160" />
+    <div class="username">@rubocop-jp</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/radinformatics">
+    <img alt="radinformatics" class="avatar-img" src="https://avatars.githubusercontent.com/u/22334653?size=160" />
+    <div class="username">@radinformatics</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/Kinto">
+    <img alt="Kinto" class="avatar-img" src="https://avatars.githubusercontent.com/u/13413813?size=160" />
+    <div class="username">@Kinto</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      7
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/ci-demo">
+    <img alt="ci-demo" class="avatar-img" src="https://avatars.githubusercontent.com/u/7657484?size=160" />
+    <div class="username">@ci-demo</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/oftn-oswg">
+    <img alt="oftn-oswg" class="avatar-img" src="https://avatars.githubusercontent.com/u/535883?size=160" />
+    <div class="username">@oftn-oswg</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      3
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/cssconf">
+    <img alt="cssconf" class="avatar-img" src="https://avatars.githubusercontent.com/u/4546715?size=160" />
+    <div class="username">@cssconf</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/google">
+    <img alt="google" class="avatar-img" src="https://avatars.githubusercontent.com/u/1342004?size=160" />
+    <div class="username">@google</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/czbiohub">
+    <img alt="czbiohub" class="avatar-img" src="https://avatars.githubusercontent.com/u/28747162?size=160" />
+    <div class="username">@czbiohub</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      6
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/h5bp">
+    <img alt="h5bp" class="avatar-img" src="https://avatars.githubusercontent.com/u/1136800?size=160" />
+    <div class="username">@h5bp</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/susom">
+    <img alt="susom" class="avatar-img" src="https://avatars.githubusercontent.com/u/5942742?size=160" />
+    <div class="username">@susom</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/apache">
+    <img alt="apache" class="avatar-img" src="https://avatars.githubusercontent.com/u/47359?size=160" />
+    <div class="username">@apache</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      3
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/adnuguk">
+    <img alt="adnuguk" class="avatar-img" src="https://avatars.githubusercontent.com/u/8366857?size=160" />
+    <div class="username">@adnuguk</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      2
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/PHPLeaders">
+    <img alt="PHPLeaders" class="avatar-img" src="https://avatars.githubusercontent.com/u/6114186?size=160" />
+    <div class="username">@PHPLeaders</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      4
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/ter-informatique">
+    <img alt="ter-informatique" class="avatar-img" src="https://avatars.githubusercontent.com/u/36438338?size=160" />
+    <div class="username">@ter-informatique</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/Perl-Toolchain-Gang">
+    <img alt="Perl-Toolchain-Gang" class="avatar-img" src="https://avatars.githubusercontent.com/u/382510?size=160" />
+    <div class="username">@Perl-Toolchain-Gang</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      11
+    </span>
+</a></li>
+<li class="avatar-cell">
+  <a class="avatar-link" href="/organisations/ansible-network">
+    <img alt="ansible-network" class="avatar-img" src="https://avatars.githubusercontent.com/u/36541715?size=160" />
+    <div class="username">@ansible-network</div>
+    <span class="pr-badge">
+      <svg height="9" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="6" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      1
+    </span>
+</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 two-up-split left">
+      <div class="block">
+        <div class="title-block">
+          <svg class="octicon octicon-git-pull-request mega-octicon" height="40" viewBox="0 0 12 16" version="1.1" width="30" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <h3 class="block-title">
+            Latest Contributions (0 total)
+          </h3>
+          <p>
+            Wonder what people are up to this holiday? Check out these contributions, or make a contribution now and find yours here!
+          </p>
+          <a class="btn btn-default btn-sm" href="/pull_requests">View All</a>
+        </div>
+          <br/>
+          <div class="well">
+            No contributions yet this year!
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 two-up-split right">
+      <div class="block">
+        <div class="title-block">
+          <svg class="octicon octicon-repo mega-octicon" height="40" viewBox="0 0 12 16" version="1.1" width="30" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+          <h3 class="block-title">
+            723
+            Suggested Projects
+          </h3>
+          <p>
+            Can’t think of a project you’d like to help contribute to? We’ve put together a list of popular projects here.
+          </p>
+          <a class="btn btn-default btn-sm" href="/projects/new">Suggest a project</a>
+          <a class="btn btn-default btn-sm" href="/projects">View All</a>
+        </div>
+        <div class="project javascript" data-id="1555">
+  <div class="language label label-info pull-right">
+    <a href="/languages/javascript">JavaScript</a>
+  </div>
+  <a target="_blank" title="clappr/clappr" class="project-link" href="https://github.com/clappr/clappr">
+    <span class="project-title">
+      Clappr
+    </span>
+    <p class="js-emoji">
+      An extensible media player for the web
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/tests">tests</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/beginner">beginner</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/clappr/clappr/labels/refactoring">refactoring</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/clappr/clappr">Contribulator score: 29</a>
+    </div>
+</div>
+<div class="project d" data-id="2132">
+  <div class="language label label-info pull-right">
+    <a href="/languages/d">D</a>
+  </div>
+  <a target="_blank" title="dlang/phobos" class="project-link" href="https://github.com/dlang/phobos">
+    <span class="project-title">
+      Phobos
+    </span>
+    <p class="js-emoji">
+      Standard library of the D programming language.
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/dlang/phobos/labels/refactoring">refactoring</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/dlang/phobos/labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/dlang/phobos/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/dlang/phobos/labels/bug">bug</a>
+    </div>
+</div>
+<div class="project php" data-id="1469">
+  <div class="language label label-info pull-right">
+    <a href="/languages/php">PHP</a>
+  </div>
+  <a target="_blank" title="swiftmailer/swiftmailer" class="project-link" href="https://github.com/swiftmailer/swiftmailer">
+    <span class="project-title">
+      Swift Mailer
+    </span>
+    <p class="js-emoji">
+      Comprehensive mailing tools for PHP | &quot;Swift Mailer is highly object-oriented by design and lends itself
+to use in complex web application with a great deal of flexibility.&quot;
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/swiftmailer/swiftmailer/labels/tests">tests</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/swiftmailer/swiftmailer/labels/refactoring">refactoring</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/swiftmailer/swiftmailer/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/swiftmailer/swiftmailer">Contribulator score: 29</a>
+    </div>
+</div>
+<div class="project javascript" data-id="1228">
+  <div class="language label label-info pull-right">
+    <a href="/languages/javascript">JavaScript</a>
+  </div>
+  <a target="_blank" title="maxogden/dat" class="project-link" href="https://github.com/maxogden/dat">
+    <span class="project-title">
+      dat
+    </span>
+    <p class="js-emoji">
+      Dat is an open source project that provides a streaming interface between every file format and data storage backend.
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/maxogden/dat/labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/maxogden/dat/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/maxogden/dat/labels/help-wanted">help-wanted</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/maxogden/dat/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/maxogden/dat">Contribulator score: 38</a>
+    </div>
+</div>
+<div class="project python" data-id="1774">
+  <div class="language label label-info pull-right">
+    <a href="/languages/python">Python</a>
+  </div>
+  <a target="_blank" title="coala-analyzer/coala" class="project-link" href="https://github.com/coala-analyzer/coala">
+    <span class="project-title">
+      coala
+    </span>
+    <p class="js-emoji">
+      coala provides a unified command-line interface for linting and fixing all your code, regardless of the programming languages you use.
+
+
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/documentation">documentation</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/help-wanted">help-wanted</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/coala-analyzer/coala/labels/beginner">beginner</a>
+    </div>
+</div>
+<div class="project python" data-id="583">
+  <div class="language label label-info pull-right">
+    <a href="/languages/python">Python</a>
+  </div>
+  <a target="_blank" title="ansible/ansible" class="project-link" href="https://github.com/ansible/ansible">
+    <span class="project-title">
+      Ansible
+    </span>
+    <p class="js-emoji">
+      Ansible is a radically simple IT orchestration engine that makes your applications and systems easier to deploy. 
+    </p>
+</a>    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/ansible/ansible/labels/feature">feature</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/ansible/ansible/labels/bug">bug</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+      <a target="_blank" href="https://github.com/ansible/ansible/labels/enhancement">enhancement</a>
+    </div>
+    <div class="project-label">
+      <svg height="10" class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"/></svg>
+      <a class="contribulator" target="_blank" href="https://contribulator.24pullrequests.com/ansible/ansible">Contribulator score: 29</a>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <footer>
+  <div class="dark">
+    <div class="dark-inner container">
+      <ul class="unstyled pull-right">
+        <li>
+          Sponsored by&nbsp;
+          <a href="https://dnsimple.com">DNSimple</a>&#44;&nbsp;
+          <a href="https://octobox.io/">Octobox</a>&nbsp;&amp;&nbsp;
+          <a href="https://bugsnag.com">Bugsnag</a>
+        </li>
+      </ul>
+      <ul class="unstyled pull-left">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/contributing">How to contribute?</a>
+        </li>
+        <li>
+          <a href="/api">API</a>
+        </li>
+        <li>
+          <a href="/unsubscribe">Unsubscribe</a>
+        <li>
+          <div class="locale dropup">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="locale" type="button">
+              <img class="flag" alt=" " src="/assets/flags/en-18f458877fd8bea92a850d8b8b28ff702915180dbcd143b224ad90bf74c31676.png" />
+              English
+              <span class="caret"></span>
+            </button>
+            <ul aria-labelledby="dropdownMenu1" class="dropdown-menu pull-right" role="menu">
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/en">
+                    <img class="flag" alt=" " src="/assets/flags/en-18f458877fd8bea92a850d8b8b28ff702915180dbcd143b224ad90bf74c31676.png" />
+                    English
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/es">
+                    <img class="flag" alt=" " src="/assets/flags/es-6c35b6baf6dc5a8eef82318f819e6a3b4f50f97c3c98e271be7ed31869ced207.png" />
+                    Español
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/el">
+                    <img class="flag" alt=" " src="/assets/flags/el-f5442e8c63f953b8b1bd0b0187c609ac1195b073760d40a1ca2654f0ea099c30.png" />
+                    Ελληνικά
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/pt_br">
+                    <img class="flag" alt=" " src="/assets/flags/pt_br-1d83e12190fc5fb9df02d0a00d6d6c60e452009c134df22960facd2c032af097.png" />
+                    Português do Brasil
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/fi">
+                    <img class="flag" alt=" " src="/assets/flags/fi-6815e728d202c14bad08cf9b7746028a4b3594621728275deb48782ffec4ab0a.png" />
+                    Suomi
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/fr">
+                    <img class="flag" alt=" " src="/assets/flags/fr-927baa1d5d5de54a34209a0ae755ea680071b0612ed2760cc289c61168759f70.png" />
+                    Français
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/de">
+                    <img class="flag" alt=" " src="/assets/flags/de-af3f91d7d43edef9f84b5cf53982e21f8725ec57fd958210e535a1504dafc446.png" />
+                    Deutsch
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/ru">
+                    <img class="flag" alt=" " src="/assets/flags/ru-4599b6ed3e228a8ea84e1a3a3a4d4d5d6536fc7fc4d12ecaa2102a8ec8139ec4.png" />
+                    Русский
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/uk">
+                    <img class="flag" alt=" " src="/assets/flags/uk-b4dd8f97f00394bbb318be81574a45ba5c53a8e96cc57b5e5a4fba7853f60682.png" />
+                    Українська
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/th">
+                    <img class="flag" alt=" " src="/assets/flags/th-e0f2063c0bb484731457a9cd0644514dfffb2d48e82565ca5e0607fd50c2de35.png" />
+                    ไทย
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/it">
+                    <img class="flag" alt=" " src="/assets/flags/it-85b03e019b780e7e97e3ab6f0717fe78c69563ec441f19b7d5692996f2fee6ef.png" />
+                    Italiano
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/nb">
+                    <img class="flag" alt=" " src="/assets/flags/nb-ebe8bb4d3031e5c267414e84de81bef311312c7c1ca522b77e1716936f193e29.png" />
+                    Norsk bokmål
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/ta">
+                    <img class="flag" alt=" " src="/assets/flags/ta-5d54d0af426868c299bfb5e942e4d0523ca9d482cd86339f597266626acf7dff.png" />
+                    தமிழ்
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/tr">
+                    <img class="flag" alt=" " src="/assets/flags/tr-2450aed6a4eb2ce0a0a05fb3d7d49241969f4d74e2682ab60bb9612e421b60c2.png" />
+                    <span class="translation_missing" title="translation missing: en.locale.tr">Tr</span>
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/zh_Hans">
+                    <img class="flag" alt=" " src="/assets/flags/zh_Hans-b49fcfcf182c7b54af47ebd7c3675e5e2ecbd1737b7f77733542c8e218433e2c.png" />
+                    简体中文
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/zh_Hant">
+                    <img class="flag" alt=" " src="/assets/flags/zh_Hant-e8e82b5214b0bcf502ae764c4ef1626d27c93f7f8e51bc902a6097ef8d09b95e.png" />
+                    正體中文
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/ja">
+                    <img class="flag" alt=" " src="/assets/flags/ja-5ad7497eca37953d60803ac40b541ffbc43d51e0b38e2e11c3912ee794d01036.png" />
+                    日本語
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/cs">
+                    <img class="flag" alt=" " src="/assets/flags/cs-f063f754d9a556c26414dfd3856decf03a654674160c023b039ff00c0ce860f5.png" />
+                    Čeština
+</a>                </li>
+                <li role="presentation">
+                  <a role="menuitem" href="/locale/hi">
+                    <img class="flag" alt=" " src="/assets/flags/hi-83ecb35c97e9dda3b1a0040f6a2ce65258f3a53614379ad6695fa21ec411c1dc.png" />
+                    हिंदी
+</a>                </li>
+              <li class="divider"></li>
+              <li role="presentation">
+                <a href="https://github.com/24pullrequests/24pullrequests/wiki/Adding-a-locale">Translate into your language!</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="/assets/application-c9dd3cf833afa4c0676139825cc354494e10f663b508c7668b3e2b3712397300.js"></script>
+
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: '24pullrequests/24pullrequests'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script>
+
+  </body>
+</html>

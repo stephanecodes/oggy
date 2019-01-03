@@ -1,0 +1,40 @@
+{
+  "initialUrl": "https://www.snapchat.com/",
+  "metadata": {
+    "title": "Snapchat - The fastest way to share a moment!",
+    "description": "Snapchat lets you easily talk with friends, view Live Stories from around the world, and explore news in Discover. Life's more fun when you live in the moment!",
+    "siteName": "snapchat.com",
+    "image": "https://www.snapchat.com/global/social-lg.jpg",
+    "url": "https://www.snapchat.com",
+    "icon": "https://www.snapchat.com/static/assets/icon_100.png"
+  },
+  "parsedData": {
+    "og": {
+      "title": "Snapchat - The fastest way to share a moment!",
+      "url": "https://www.snapchat.com",
+      "image": "https://www.snapchat.com/global/social-lg.jpg",
+      "image:type": "image/jpeg",
+      "image:width": "1200",
+      "image:height": "630",
+      "description": "Snapchat lets you easily talk with friends, view Live Stories from around the world, and explore news in Discover. Life's more fun when you live in the moment!"
+    },
+    "twitter": {
+      "card": "app",
+      "site": "@Snapchat",
+      "app:id:iphone": "447188370",
+      "app:id:ipad": "447188370",
+      "app:id:googleplay": "com.snapchat.android"
+    },
+    "other_meta": {
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
+      "keywords": "Snapchat",
+      "description": "Snapchat lets you easily talk with friends, view Live Stories from around the world, and explore news in Discover. Life's more fun when you live in the moment!",
+      "apple-itunes-app": "app-id=447188370"
+    },
+    "misc": {
+      "title": "Snapchat - The fastest way to share a moment!",
+      "icon": "https://www.snapchat.com/static/assets/icon_100.png"
+    }
+  },
+  "time": 321
+}

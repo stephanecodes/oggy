@@ -1,0 +1,36 @@
+{
+	"name": "oggy",
+	"version": "0.0.0",
+	"description": "Open Graph, Twitter and meta data scraper",
+	"license": "MIT",
+	"repository": "stephanecodes/oggy",
+	"author": {
+		"name": "Stephane Janicaud",
+		"url": "https://stephanecodes.github.io/"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && nyc --reporter=html --reporter=text ava --verbose"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"Open Graph",
+		"Scrapper"
+	],
+	"dependencies": {
+		"entities": "^1.1.2",
+		"got": "^9.4.0",
+		"jsonify-paths": "^1.0.1",
+		"lodash": "^4.17.11"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"nock": "^10.0.4",
+		"nyc": "^13.1.0",
+		"xo": "^0.21.0"
+	}
+}

@@ -1,0 +1,61 @@
+{
+  "initialUrl": "https://www.bbc.com/japanese/46601025",
+  "metadata": {
+    "title": "英労働党、メイ首相に対する不信任案を提出",
+    "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
+    "siteName": "BBCニュース",
+    "image": "https://ichef.bbci.co.uk/news/1024/branded_japanese/14678/production/_104767538_mediaitem104767536.jpg",
+    "url": "https://www.bbc.com/japanese/46601025",
+    "type": "article",
+    "icon": "https://static.bbc.co.uk/news/1.269.03180/apple-touch-icon.png",
+    "locale": "ja_JP"
+  },
+  "parsedData": {
+    "og": {
+      "title": "英労働党、メイ首相に対する不信任案を提出",
+      "type": "article",
+      "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
+      "site_name": "BBCニュース",
+      "locale": "ja_JP",
+      "url": "https://www.bbc.com/japanese/46601025",
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_japanese/14678/production/_104767538_mediaitem104767536.jpg",
+      "image:alt": "BBCニュース. Jeremy Corbyn"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@bbcnewsjapan",
+      "title": "英労働党、メイ首相に対する不信任案を提出",
+      "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
+      "creator": "@bbcnewsjapan",
+      "image:src": "https://ichef.bbci.co.uk/news/1024/branded_japanese/14678/production/_104767538_mediaitem104767536.jpg",
+      "image:alt": "Jeremy Corbyn",
+      "domain": "www.bbc.com"
+    },
+    "other_meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
+      "x-country": "fr",
+      "x-audience": "International",
+      "cps_audience": "International",
+      "cps_changequeueid": "132618317",
+      "article:author": "https://www.facebook.com/bbcnews",
+      "article:section": "ホーム",
+      "fb:pages": "285361880228,192168680794107,9432520138,347501767628,264572343581678,303522857815,166580710064489,592266607456680,260669183761,160817274042538,236659822607,237647452933504,10150118096995434,113097918700687,143048895744759,81395234664,207150596007088,167959249906191,64040652712,190992343324,103678496456574,367167334474,160894643929209,186742265162,1526071940947174,230299653821,124158667615790,126548377386804,298318986864908,1068750829805728,228458913833525,163571453661989,660673490805047,948946275170651",
+      "apple-mobile-web-app-title": "BBC News",
+      "application-name": "BBC News",
+      "msapplication-tileimage": "BBC News",
+      "msapplication-tilecolor": "#bb1919",
+      "mobile-web-app-capable": "yes",
+      "robots": "NOODP,NOYDIR",
+      "fb:app_id": "1609039196070050",
+      "fb:admins": "100004154058350",
+      "google-site-verification": "auTeTTwSt_KBY_4iDoR00Lwb7-qzx1IgzJy6ztaWgEI"
+    },
+    "misc": {
+      "title": "英労働党、メイ首相に対する不信任案を提出 - BBCニュース",
+      "locale": "ja",
+      "icon": "https://static.bbc.co.uk/news/1.269.03180/apple-touch-icon.png"
+    }
+  },
+  "time": 2336
+}

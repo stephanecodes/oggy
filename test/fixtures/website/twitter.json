@@ -1,0 +1,44 @@
+{
+  "initialUrl": "https://twitter.com/Korben/status/1074739983443996672",
+  "metadata": {
+    "title": "Kᴏʀʙᴇɴ on Twitter",
+    "description": "“1980s Amiga has been running the AC and heat in 19 schools for 30 years #kbn https://t.co/c1wwhOl0Cs”",
+    "siteName": "Twitter",
+    "image": "https://pbs.twimg.com/profile_images/797057160366657536/vmmIoiAy_400x400.jpg",
+    "url": "https://twitter.com/Korben/status/1074739983443996672",
+    "type": "article",
+    "icon": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png",
+    "locale": "fr"
+  },
+  "parsedData": {
+    "og": {
+      "type": "article",
+      "url": "https://twitter.com/Korben/status/1074739983443996672",
+      "title": "Kᴏʀʙᴇɴ on Twitter",
+      "image": "https://pbs.twimg.com/profile_images/797057160366657536/vmmIoiAy_400x400.jpg",
+      "description": "“1980s Amiga has been running the AC and heat in 19 schools for 30 years #kbn https://t.co/c1wwhOl0Cs”",
+      "site_name": "Twitter"
+    },
+    "twitter": {},
+    "other_meta": {
+      "robots": "NOODP",
+      "msapplication-tileimage": "//abs.twimg.com/favicons/win8-tile-144.png",
+      "msapplication-tilecolor": "#00aced",
+      "swift-page-name": "permalink",
+      "swift-page-section": "permalink",
+      "al:ios:url": "twitter://status?id=1074739983443996672",
+      "al:ios:app_store_id": "333903271",
+      "al:ios:app_name": "Twitter",
+      "al:android:url": "twitter://status?status_id=1074739983443996672",
+      "al:android:package": "com.twitter.android",
+      "al:android:app_name": "Twitter",
+      "fb:app_id": "2231777543"
+    },
+    "misc": {
+      "title": "Kᴏʀʙᴇɴ sur Twitter : &quot;1980s Amiga has been running the AC and heat in 19 schools for 30 years #kbn https://t.co/c1wwhOl0Cs&quot;",
+      "locale": "fr",
+      "icon": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png"
+    }
+  },
+  "time": 394
+}

@@ -1,0 +1,38 @@
+{
+  "initialUrl": "https://24pullrequests.com/",
+  "metadata": {
+    "title": "24 Pull Requests",
+    "description": "24 Pull Requests is a yearly initiative to encourage contributors around the world to send 24 pull requests between December 1st and December 24th.",
+    "siteName": "24pullrequests.com",
+    "image": "https://24pullrequests.com/assets/24-pr-open-graph-0ad2b46ed9df31978f2cf408e1355a392217eed4d75f80d7ed8f41b64b4891c7.png",
+    "url": "https://24pullrequests.com/",
+    "type": "website",
+    "locale": "en"
+  },
+  "parsedData": {
+    "og": {
+      "title": "24 Pull Requests",
+      "type": "website",
+      "url": "https://24pullrequests.com/",
+      "image": "https://24pullrequests.com/assets/24-pr-open-graph-0ad2b46ed9df31978f2cf408e1355a392217eed4d75f80d7ed8f41b64b4891c7.png",
+      "description": "24 Pull Requests is a yearly initiative to encourage contributors around the world to send 24 pull requests between December 1st and December 24th."
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@24pullrequests",
+      "creator": "@teabass",
+      "title": "24 Pull Requests",
+      "description": "24 Pull Requests is a yearly initiative to encourage contributors around the world to send 24 pull requests between December 1st and December 24th.",
+      "image": "https://24pullrequests.com/assets/24-pr-open-graph-0ad2b46ed9df31978f2cf408e1355a392217eed4d75f80d7ed8f41b64b4891c7.png"
+    },
+    "other_meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "csrf-param": "authenticity_token",
+      "csrf-token": "S5Yyw+3nk3JnBzm0jn3AZ2TddvOLFaGVxYSJ7p7k518umtad4fum6oAk7ZZkFVgNfPXaUDO3gS5ugMlXaC1y7w=="
+    },
+    "misc": {
+      "locale": "en"
+    }
+  },
+  "time": 1644
+}
