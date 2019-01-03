@@ -9,11 +9,11 @@ module.exports = () => {
 		}
 	};
 
-	const afterScrapeUrl = (metadata, content, context) => {
+	const afterScrapeUrl = (oggyfied, content, context) => {
 		if (context.user && context.user.fullName) {
-			metadata.title = `/// Hooked for ${context.user.fullName} /// ${metadata.title}`;
+			oggyfied.title = `/// Hooked for ${context.user.fullName} /// ${oggyfied.title}`;
 		} else {
-			metadata.title = '/// Hooked ///';
+			oggyfied.title = '/// Hooked ///';
 		}
 	};
 
