@@ -18,28 +18,23 @@ const oggy = require('oggy');
 (async () => {
 
 	const scraper = oggy();
-	const response = await scraper.scrap('http://ogp.me/');
+	const res = await scraper.scrape('http://ogp.me/');
+	
+	// =>
 
-	/*
-
-	response.graph = {
-
+	response.metadata = {
+		...
 	}
 
-	*/
-
 })();
-
-await oggy();
-//=> 'unicorns & rainbows'
 ```
 
 
 ## API
 
-### oggy(input, [options])
+### oggy.scrape(url, [options])
 
-#### input
+#### url
 
 Type: `string`
 
@@ -49,10 +44,10 @@ Lorem ipsum.
 
 Type: `Object`
 
-##### foo
+##### userContext
 
-Type: `boolean`<br>
-Default: `false`
+Type: `Object`<br>
+Default: `{}`
 
 Lorem ipsum.
 
