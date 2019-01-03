@@ -23,11 +23,11 @@ test('change metadata title', async t => {
 		test(`change metadata title by adding user context information '${fullName}'`, async t => {
 			const scraper = oggy({hooks: [sampleHook()]});
 			const fixture = fixtures.use('boilerplate.basic');
-			const userContext = {fullName};
-			const res = await scraper.scrape(fixture.url, {userContext});
+			const user = {fullName};
+			const res = await scraper.scrape(fixture.url, {user});
 
 			t.truthy(res.metadata);
-			t.true(res.metadata.title.indexOf(`/// Hooked for ${userContext.fullName} ///`) !== -1);
+			t.true(res.metadata.title.indexOf(`/// Hooked for ${user.fullName} ///`) !== -1);
 		});
 	});
 

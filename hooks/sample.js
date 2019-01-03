@@ -3,19 +3,15 @@ module.exports = () => {
 
 	const handleUrl = url => /stephanecodes/.test(url.hostname);
 
-	const beforeScrapeUrl = (requestHeaders, context) => {
-		if (context.userContext.uid) {
-			requestHeaders['x-user-uid'] = context.userContext.uid;
-		}
-		if (context.clientBrowserRequest) {
-			// Forward `Authorization header`
-			requestHeaders.Authorization = context.clientBrowserRequest.headers.Authorization;
+	const beforeScrapeUrl = (headers, context) => {
+		if (context.user && context.user.uid) {
+			headers['x-user-uid'] = context.user.uid;
 		}
 	};
 
-	const afterScrapeUrl = (metadata, context) => {
-		if (context.userContext.fullName) {
-			metadata.title = `/// Hooked for ${context.userContext.fullName} /// ${metadata.title}`;
+	const afterScrapeUrl = (metadata, content, context) => {
+		if (context.user && context.user.fullName) {
+			metadata.title = `/// Hooked for ${context.user.fullName} /// ${metadata.title}`;
 		} else {
 			metadata.title = '/// Hooked ///';
 		}

@@ -294,7 +294,7 @@ module.exports = (options = {}) => {
 	};
 
 	// Scrape one url
-	const scrape = async (url, scrapeOptions) => {
+	const scrape = async (url, context) => {
 		try {
 			let time = Date.now(); // Start timer
 
@@ -303,9 +303,8 @@ module.exports = (options = {}) => {
 
 			const urlObject = URL.parse(url, false, true);
 			const oggyHooks = hooksForUrl(urlObject);
-			const userContext = (scrapeOptions && scrapeOptions.userContext) || {};
 
-			let context = {url: urlObject, userContext};
+			context = context || {};
 
 			const res = await oggyGot(urlObject, {
 				timeout: oggyOptions.requestTimeout,
@@ -333,8 +332,8 @@ module.exports = (options = {}) => {
 
 			oggyHooks.forEach(hook => {
 				if (hook.afterScrapeUrl) {
-					context = {...context, body, parsedData, responseHeaders: res.headers};
-					hook.afterScrapeUrl(metadata, context);
+					const content = {url: urlObject, body, parsedData, headers: res.headers};
+					hook.afterScrapeUrl(metadata, content, context);
 				}
 			});
 
