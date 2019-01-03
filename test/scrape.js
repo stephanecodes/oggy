@@ -7,9 +7,9 @@ test('required properties', async t => {
 	const fixture = fixtures.use('boilerplate.basic');
 	const res = await scraper.scrape(fixture.url);
 
-	t.truthy(res.metadata);
-	t.is(res.metadata.title, 'Basic boilerplate');
-	t.is(res.metadata.locale, 'en');
+	t.truthy(res.oggyfied);
+	t.is(res.oggyfied.title, 'Basic boilerplate');
+	t.is(res.oggyfied.locale, 'en');
 });
 
 test('use hostname as sitename when sitename is undefined', async t => {
@@ -17,8 +17,8 @@ test('use hostname as sitename when sitename is undefined', async t => {
 	const fixture = fixtures.use('boilerplate.basic');
 	const res = await scraper.scrape(fixture.url);
 
-	t.truthy(res.metadata);
-	t.is(res.metadata.siteName, 'stephanecodes.github.io');
+	t.truthy(res.oggyfied);
+	t.is(res.oggyfied.siteName, 'stephanecodes.github.io');
 });
 
 test('accept shortcut icon', async t => {
@@ -26,8 +26,8 @@ test('accept shortcut icon', async t => {
 	const fixture = fixtures.use('boilerplate.basic');
 	const res = await scraper.scrape(fixture.url);
 
-	t.truthy(res.metadata);
-	t.is(res.metadata.icon, fixture.url.concat('/favicon.ico'));
+	t.truthy(res.oggyfied);
+	t.is(res.oggyfied.icon, fixture.url.concat('/favicon.ico'));
 });
 
 test('use Google favicon', async t => {
@@ -35,8 +35,8 @@ test('use Google favicon', async t => {
 	const fixture = fixtures.use('website.tiktok');
 	const res = await scraper.scrape(fixture.url);
 
-	t.truthy(res.metadata);
-	t.is(res.metadata.icon, 'https://www.google.com/s2/favicons?domain=www.tiktok.com');
+	t.truthy(res.oggyfied);
+	t.is(res.oggyfied.icon, 'https://www.google.com/s2/favicons?domain=www.tiktok.com');
 });
 
 test('scrape multiple', async t => {
@@ -53,8 +53,8 @@ test('scrape multiple', async t => {
 	]);
 
 	t.true(res.length === 3);
-	t.truthy(res[0].metadata);
-	t.truthy(res[1].error); // Must return an error instead of metadata as url matches one exclusion
-	t.truthy(res[0].metadata);
+	t.truthy(res[0].oggyfied);
+	t.truthy(res[1].error); // Must return an error as url matches one exclusion
+	t.truthy(res[0].oggyfied);
 });
 

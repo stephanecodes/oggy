@@ -8,8 +8,8 @@ test('change metadata title', async t => {
 	const fixture = fixtures.use('boilerplate.basic');
 	const res = await scraper.scrape(fixture.url);
 
-	t.truthy(res.metadata);
-	t.is(res.metadata.title, '/// Hooked ///');
+	t.truthy(res.oggyfied);
+	t.is(res.oggyfied.title, '/// Hooked ///');
 });
 
 [
@@ -26,8 +26,8 @@ test('change metadata title', async t => {
 			const user = {fullName};
 			const res = await scraper.scrape(fixture.url, {user});
 
-			t.truthy(res.metadata);
-			t.true(res.metadata.title.indexOf(`/// Hooked for ${user.fullName} ///`) !== -1);
+			t.truthy(res.oggyfied);
+			t.true(res.oggyfied.title.indexOf(`/// Hooked for ${user.fullName} ///`) !== -1);
 		});
 	});
 

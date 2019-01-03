@@ -11,7 +11,7 @@ websites.forEach(website => {
 		const fixture = fixtures.use(`website.${website}`);
 		const res = await scraper.scrape(fixture.url);
 
-		t.truthy(res.metadata);
-		t.deepEqual(res.metadata, fixture.metadata);
+		t.truthy(res.oggyfied);
+		t.deepEqual(res.oggyfied, fixture.oggyfied);
 	});
 });

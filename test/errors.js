@@ -38,7 +38,7 @@ test('missing property', async t => {
 	const res = await scraper.scrape(fixture.url);
 
 	t.truthy(res.error);
-	t.true(/is missing property/i.test(res.error.message));
+	t.true(/missing property/i.test(res.error.message));
 });
 
 test('max content length', async t => {
