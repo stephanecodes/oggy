@@ -17,7 +17,7 @@ module.exports = (options = {}) => {
 			requestTimeout: 5000,
 			requiredProps: [],
 			exclusions: [],
-			parsedData: false,
+			metadata: false,
 			hooks: []
 		}
 	};
@@ -77,32 +77,31 @@ module.exports = (options = {}) => {
 		}
 	};
 
-	const assertMetadataComplete = metadata => {
+	const assertComplete = props => {
 		const {requiredProps} = oggyOptions;
 		if (requiredProps) {
-			const prop = requiredProps.find(prop => !metadata[prop]);
+			const prop = requiredProps.find(prop => !props[prop]);
 			if (prop) {
-				throw new Error(`Metadata is missing property '${prop}'`);
+				throw new Error(`Missing property '${prop}'`);
 			}
 		}
 	};
 
-	// Cleanup metadata
-	const cleanupMetadata = metadata => {
-		for (const prop in metadata) {
+	const cleanup = props => {
+		for (const prop in props) {
 			// Remove every property with an empty value
-			if (metadata[prop] === undefined) {
-				delete metadata[prop];
+			if (props[prop] === undefined) {
+				delete props[prop];
 			} else {
 				// Convert HTML entities on some properties
 				if (/title|description|siteName/.test(prop)) {
-					metadata[prop] = entities.decodeHTML(metadata[prop]);
+					props[prop] = entities.decodeHTML(props[prop]);
 				}
 				// Remove carriage returns, line feeds and trailing spaces
-				metadata[prop] = metadata[prop].replace(/\r+|\n+/g, '. ').trim();
+				props[prop] = props[prop].replace(/\r+|\n+/g, '. ').trim();
 			}
 		}
-		return metadata;
+		return props;
 	};
 
 	// Clean host name by removing `www`
@@ -165,7 +164,7 @@ module.exports = (options = {}) => {
 		}
 	};
 
-	function buildMetadata(data, urlObject) {
+	function fusion(data, urlObject) {
 		const title = _.get(data, 'og.title') ||
 			_.get(data, 'twitter.title') ||
 			_.get(data, 'otherMeta.title') ||
@@ -192,9 +191,7 @@ module.exports = (options = {}) => {
 		const locale = _.get(data, 'og.locale') ||
 			_.get(data, 'misc.locale');
 
-		const metadata = {title, description, siteName, image, url, type, icon, locale};
-
-		return metadata;
+		return {title, description, siteName, image, url, type, icon, locale};
 	}
 
 	const findIconUrl = (body, urlObject) => {
@@ -250,8 +247,8 @@ module.exports = (options = {}) => {
 		return iconUrl;
 	};
 
-	function parseData(body, urlObject) {
-		const data = {
+	function parse(body, urlObject) {
+		const metadata = {
 			og: {},
 			twitter: {},
 			otherMeta: {},
@@ -263,29 +260,29 @@ module.exports = (options = {}) => {
 			const meta = tagToMeta(tag);
 			if (meta && meta.nameOrProperty) {
 				if (meta.nameOrProperty.startsWith('og:')) {
-					data.og[meta.nameOrProperty.substring(3)] = meta.value;
+					metadata.og[meta.nameOrProperty.substring(3)] = meta.value;
 				} else if (meta.nameOrProperty.startsWith('twitter:')) {
-					data.twitter[meta.nameOrProperty.substring(8)] = meta.value;
+					metadata.twitter[meta.nameOrProperty.substring(8)] = meta.value;
 				} else {
-					data.otherMeta[meta.nameOrProperty] = meta.value;
+					metadata.otherMeta[meta.nameOrProperty] = meta.value;
 				}
 			}
 		});
 
 		// Find page title
 		(body.match(/<title>(.*)<\/title>/i) || []).forEach(tag => {
-			data.misc.title = getTagContent(tag);
+			metadata.misc.title = getTagContent(tag);
 		});
 
 		// Find page locale
 		(body.match(/<html.*?>/i) || []).forEach(tag => {
-			data.misc.locale = getTagAttributeValue(tag, 'lang');
+			metadata.misc.locale = getTagAttributeValue(tag, 'lang');
 		});
 
 		// Find icon
-		data.misc.icon = findIconUrl(body, urlObject);
+		metadata.misc.icon = findIconUrl(body, urlObject);
 
-		return data;
+		return metadata;
 	}
 
 	// Returns only hooks which handle passed url
@@ -326,27 +323,26 @@ module.exports = (options = {}) => {
 			assertContentTypeIsAllowed(res.headers['content-type']);
 
 			const body = res.body || '';
-			const parsedData = parseData(body, urlObject);
-			// Console.log(JSON.stringify(data, null, 2))
-			let metadata = buildMetadata(parsedData, urlObject);
+			const metadata = parse(body, urlObject);
+			let oggyfied = fusion(metadata, urlObject);
 
 			oggyHooks.forEach(hook => {
 				if (hook.afterScrapeUrl) {
-					const content = {url: urlObject, body, parsedData, headers: res.headers};
-					hook.afterScrapeUrl(metadata, content, context);
+					const content = {url: urlObject, body, metadata, headers: res.headers};
+					hook.afterScrapeUrl(oggyfied, content, context);
 				}
 			});
 
-			metadata = cleanupMetadata(metadata);
+			oggyfied = cleanup(oggyfied);
 
-			assertMetadataComplete(metadata);
+			assertComplete(oggyfied);
 
 			time = Date.now() - time; // Stop timer
 
-			if (oggyOptions.parsedData === true) {
-				return {initialUrl: url, metadata, parseData, time};
+			if (oggyOptions.metadata === true) {
+				return {initialUrl: url, oggyfied, metadata, time};
 			}
-			return {initialUrl: url, metadata, time};
+			return {initialUrl: url, oggyfied, time};
 		} catch (err) {
 			return {initialUrl: url, error: {message: err.message}};
 		}
