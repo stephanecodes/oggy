@@ -1,14 +1,14 @@
 {
-  "metadata": {
+  "oggyfied": {
     "title": "Basic boilerplate",
     "description": "Basic template description",
     "locale": "en",
     "siteName": "stephanecodes.github.io"
   },
-  "parsedData": {
+  "metadata": {
     "og": {},
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "description": "Basic template description"
     },
     "misc": {

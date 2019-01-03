@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://www.bbc.com/japanese/46601025",
-  "metadata": {
+  "oggyfied": {
     "title": "英労働党、メイ首相に対する不信任案を提出",
     "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
     "siteName": "BBCニュース",
@@ -10,7 +10,7 @@
     "icon": "https://static.bbc.co.uk/news/1.269.03180/apple-touch-icon.png",
     "locale": "ja_JP"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "title": "英労働党、メイ首相に対する不信任案を提出",
       "type": "article",
@@ -31,7 +31,7 @@
       "image:alt": "Jeremy Corbyn",
       "domain": "www.bbc.com"
     },
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width, initial-scale=1.0",
       "description": "コービン党首は17日の議会で、離脱協定をめぐる下院採決の1カ月延期は受け入れられず、メイ首相は英国を「国家の危機」に陥れたと批判した。",
       "x-country": "fr",

@@ -1,6 +1,6 @@
 {
   "initialUrl": "http://www.ogp.me",
-  "metadata": {
+  "oggyfied": {
     "title": "Open Graph protocol",
     "description": "The Open Graph protocol enables any web page to become a rich object in a social graph.",
     "siteName": "ogp.me",
@@ -8,7 +8,7 @@
     "url": "http://ogp.me/",
     "type": "website"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "title": "Open Graph protocol",
       "type": "website",
@@ -21,7 +21,7 @@
       "description": "The Open Graph protocol enables any web page to become a rich object in a social graph."
     },
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "description": "The Open Graph protocol enables any web page to become a rich object in a social graph.",
       "fb:app_id": "115190258555800"
     },

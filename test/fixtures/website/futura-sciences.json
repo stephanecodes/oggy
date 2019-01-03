@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://www.futura-sciences.com/sciences/actualites/objet-kuiper-farout-objet-plus-lointain-jamais-observe-systeme-solaire-60450/",
-  "metadata": {
+  "oggyfied": {
     "title": "Farout, l'objet le plus lointain jamais observé dans le Système solaire",
     "description": "Des chercheurs qui fouillent les confins du Système solaire depuis plusieurs années viennent de débusquer un objet presque quatre fois plus éloigné du Soleil que Pluton. L’astre surnommé « Farout...",
     "siteName": "Futura",
@@ -10,7 +10,7 @@
     "icon": "https://www.futura-sciences.com/favicon-16x16.png",
     "locale": "fr"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "type": "Article",
       "title": "Farout, l'objet le plus lointain jamais observé dans le Système solaire",
@@ -27,7 +27,7 @@
       "description": "Des chercheurs qui fouillent les confins du Système solaire depuis plusieurs années viennent de débusquer un objet presque quatre fois plus éloigné du Soleil que Pluton. L’astre surnommé « Farout...",
       "image:src": "https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/7/3/6/736f16a581_50145188_farout.jpg"
     },
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
       "sitename": "Futura",
       "keywords": "objet de Kuiper, nuage de Oort, planète naine, Eris, Sedna, pluton, astéroïdes, planète X, formation des planètes, Les planètes, V774104, objet le plus lointain du Système solaire, À la Une",

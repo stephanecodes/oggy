@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://youtu.be/bwN9WP1CBi0",
-  "metadata": {
+  "oggyfied": {
     "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
     "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d'antan ! J'espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
     "siteName": "YouTube",
@@ -10,7 +10,7 @@
     "icon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
     "locale": "fr"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "site_name": "YouTube",
       "url": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
@@ -45,7 +45,7 @@
       "player:width": "1280",
       "player:height": "720"
     },
-    "other_meta": {
+    "otherMeta": {
       "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
       "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
       "keywords": "Joueur du grenier, bazar du grenier, Hors-série, Humour, Publicité",

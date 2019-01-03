@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://www.tiktok.com/",
-  "metadata": {
+  "oggyfied": {
     "title": "TikTok - video social network",
     "description": "TikTok is a destination for short-form mobile videos. Our mission is to capture and present the world's creativity, knowledge, and precious life moments, directly from the mobile phone. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos.",
     "siteName": "tiktok.com",
@@ -9,7 +9,7 @@
     "type": "website",
     "icon": "https://s16a.tiktokcdn.com/aweme/resource/web_i18n/static/image/logo/favicon_v2_7145ff0.ico"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "type": "website",
       "title": "TikTok - video social network",
@@ -18,7 +18,7 @@
       "url": "https://www.tiktok.com/"
     },
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "baiduspider": "noarchive",
       "google-site-verification": "u4UMw2Yaw9Z-vvhbuC8Fzh2adtV3jqudeCVAjcGSTpo",
       "keywords": "TikTok, Tik Tok, musically, mobile video, short-form video",

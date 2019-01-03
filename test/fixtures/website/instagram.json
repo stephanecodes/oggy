@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://www.instagram.com/?hl=en",
-  "metadata": {
+  "oggyfied": {
     "title": "Instagram",
     "description": "Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.",
     "siteName": "Instagram",
@@ -9,7 +9,7 @@
     "icon": "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png",
     "locale": "en"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "site_name": "Instagram",
       "title": "Instagram",
@@ -17,7 +17,7 @@
       "url": "https://instagram.com/"
     },
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "robots": "noimageindex, noarchive",
       "mobile-web-app-capable": "yes",
       "theme-color": "#000000",

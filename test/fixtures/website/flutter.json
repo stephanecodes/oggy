@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://flutter.io/",
-  "metadata": {
+  "oggyfied": {
     "title": "Flutter - Beautiful native apps in record time",
     "description": "Flutter is Google’s mobile UI framework for crafting high-quality native experiences on iOS and Android in record time. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.",
     "siteName": "flutter.io",
@@ -9,7 +9,7 @@
     "icon": "https://flutter.io/images/favicon.png",
     "locale": "en"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "title": "Flutter - Beautiful native apps in record time",
       "url": "https://flutter.io/",
@@ -20,7 +20,7 @@
       "card": "summary",
       "site": "@flutterio"
     },
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width, initial-scale=1",
       "description": "Flutter is Google’s mobile UI framework for crafting high-quality native experiences on iOS and Android in record time. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.",
       "keywords": " ",

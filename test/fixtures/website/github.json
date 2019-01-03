@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://github.com/sindresorhus",
-  "metadata": {
+  "oggyfied": {
     "title": "sindresorhus - Overview",
     "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus",
     "siteName": "GitHub",
@@ -10,7 +10,7 @@
     "icon": "https://github.com/fluidicon.png",
     "locale": "en"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "image": "https://avatars3.githubusercontent.com/u/170270?s=400&amp;v=4",
       "site_name": "GitHub",
@@ -20,7 +20,7 @@
       "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus"
     },
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width",
       "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus",
       "fb:app_id": "1401488693436528",

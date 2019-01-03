@@ -1,18 +1,18 @@
 {
   "initialUrl": "https://en.wikipedia.org/wiki/Land_speed_record",
-  "metadata": {
+  "oggyfied": {
     "title": "Land speed record - Wikipedia",
     "siteName": "en.wikipedia.org",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ThrustSSC.jpg/1200px-ThrustSSC.jpg",
     "icon": "https://en.wikipedia.org/static/apple-touch/wikipedia.png",
     "locale": "en"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ThrustSSC.jpg/1200px-ThrustSSC.jpg"
     },
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "generator": "MediaWiki 1.33.0-wmf.9",
       "referrer": "origin-when-cross-origin"
     },

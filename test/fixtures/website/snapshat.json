@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://www.snapchat.com/",
-  "metadata": {
+  "oggyfied": {
     "title": "Snapchat - The fastest way to share a moment!",
     "description": "Snapchat lets you easily talk with friends, view Live Stories from around the world, and explore news in Discover. Life's more fun when you live in the moment!",
     "siteName": "snapchat.com",
@@ -8,7 +8,7 @@
     "url": "https://www.snapchat.com",
     "icon": "https://www.snapchat.com/static/assets/icon_100.png"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "title": "Snapchat - The fastest way to share a moment!",
       "url": "https://www.snapchat.com",
@@ -25,7 +25,7 @@
       "app:id:ipad": "447188370",
       "app:id:googleplay": "com.snapchat.android"
     },
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
       "keywords": "Snapchat",
       "description": "Snapchat lets you easily talk with friends, view Live Stories from around the world, and explore news in Discover. Life's more fun when you live in the moment!",

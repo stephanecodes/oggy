@@ -1,6 +1,6 @@
 {
   "initialUrl": "https://octoverse.github.com/",
-  "metadata": {
+  "oggyfied": {
     "title": "The State of the Octoverse",
     "description": "The State of the Octoverse reflects on 2018 so far, teamwork across time zones, and 1.1 billion contributions.",
     "siteName": "The State of the Octoverse",
@@ -8,7 +8,7 @@
     "url": "https://octoverse.github.com/",
     "locale": "en_US"
   },
-  "parsedData": {
+  "metadata": {
     "og": {
       "title": "The State of the Octoverse",
       "locale": "en_US",
@@ -21,7 +21,7 @@
       "card": "summary_large_image",
       "site": "@github"
     },
-    "other_meta": {
+    "otherMeta": {
       "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
       "generator": "Jekyll v3.7.4",
       "description": "The State of the Octoverse reflects on 2018 so far, teamwork across time zones, and 1.1 billion contributions."

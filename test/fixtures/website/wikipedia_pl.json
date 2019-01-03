@@ -1,15 +1,15 @@
 {
   "initialUrl": "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna",
-  "metadata": {
+  "oggyfied": {
     "title": "Wikipedia, wolna encyklopedia",
     "siteName": "pl.wikipedia.org",
     "icon": "https://pl.wikipedia.org/static/apple-touch/wikipedia.png",
     "locale": "pl"
   },
-  "parsedData": {
+  "metadata": {
     "og": {},
     "twitter": {},
-    "other_meta": {
+    "otherMeta": {
       "generator": "MediaWiki 1.33.0-wmf.9",
       "referrer": "origin-when-cross-origin"
     },
