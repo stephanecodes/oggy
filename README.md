@@ -1,4 +1,5 @@
-# oggy [![Build Status](https://travis-ci.org/stephanecodes/oggy.svg?branch=master)](https://travis-ci.org/stephanecodes/oggy)
+# oggy 
+[![Build Status](https://travis-ci.org/stephanecodes/oggy.svg?branch=master)](https://travis-ci.org/stephanecodes/oggy) [![Coverage Status](https://coveralls.io/repos/github/stephanecodes/oggy/badge.svg?branch=master)](https://coveralls.io/github/stephanecodes/oggy?branch=master)
 
 >
 
