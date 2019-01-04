@@ -3,19 +3,19 @@ module.exports = () => {
 
 	const handleUrl = url => /stephanecodes/.test(url.hostname);
 
-	const beforeScrapeUrl = (headers, context) => {
+	const beforeRequest = (headers, context) => {
 		if (context.user && context.user.uid) {
 			headers['x-user-uid'] = context.user.uid;
 		}
 	};
 
-	const afterScrapeUrl = (oggyfied, content, context) => {
+	const beforeResponse = (res, content, context) => {
 		if (context.user && context.user.fullName) {
-			oggyfied.title = `/// Hooked for ${context.user.fullName} /// ${oggyfied.title}`;
+			res.oggyfied.title = `/// Hooked for ${context.user.fullName} /// ${res.oggyfied.title}`;
 		} else {
-			oggyfied.title = '/// Hooked ///';
+			res.oggyfied.title = '/// Hooked ///';
 		}
 	};
 
-	return {name, handleUrl, beforeScrapeUrl, afterScrapeUrl};
+	return {name, handleUrl, beforeRequest, beforeResponse};
 };

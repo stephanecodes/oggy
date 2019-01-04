@@ -13,17 +13,16 @@ test('change metadata title', async t => {
 });
 
 [
-	'Marty McFly',
-	'Emmett Brown',
-	'Lorraine Baines',
-	'Biff Tannen',
-	'Jennifer Parker'
+	{uid: 'u01', fullName: 'Marty McFly'},
+	{uid: 'u02', fullName: 'Emmett Brown'},
+	{uid: 'u03', fullName: 'Lorraine Baines'},
+	{uid: 'u04', fullName: 'Biff Tannen'},
+	{uid: 'u05', fullName: 'Jennifer Parker'}
 ]
-	.forEach(fullName => {
-		test(`change metadata title by adding user context information '${fullName}'`, async t => {
+	.forEach(user => {
+		test(`change metadata title by adding user context information '${user.fullName}'`, async t => {
 			const scraper = oggy({hooks: [sampleHook()]});
 			const fixture = fixtures.use('boilerplate.basic');
-			const user = {fullName};
 			const res = await scraper.scrape(fixture.url, {user});
 
 			t.truthy(res.oggyfied);
