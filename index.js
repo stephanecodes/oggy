@@ -289,28 +289,29 @@ module.exports = (options = {}) => {
 	};
 
 	// Scrape one url
-	const scrape = async (url, context) => {
+	const scrape = async (url, options) => {
 		try {
 			const time = Date.now(); // Start timer
 
 			assertUrlIsNotMalformed(url);
 			assertUrlIsAllowed(url);
 
+			options = Object.assign({}, options);
+
+			const context = options.context || {};
 			const urlObject = URL.parse(url, false, true);
 			const oggyHooks = hooksForUrl(urlObject);
-
-			context = context || {};
 
 			const res = await oggyGot(urlObject, {
 				timeout: oggyOptions.requestTimeout,
 				headers: oggyOptions.headers || {},
 				hooks: {
 					beforeRequest: [
-						options => {
+						requestOptions => {
 							// Call hooks matching this url
 							oggyHooks.forEach(hook => {
 								if (hook.beforeRequest) {
-									hook.beforeRequest(options.headers, context);
+									hook.beforeRequest(requestOptions.headers, context);
 								}
 							});
 						}
