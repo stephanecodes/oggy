@@ -1,5 +1,4 @@
 {
-  "initialUrl": "https://youtu.be/bwN9WP1CBi0",
   "oggyfied": {
     "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
     "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d'antan ! J'espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
@@ -10,60 +9,40 @@
     "icon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
     "locale": "fr"
   },
-  "metadata": {
-    "og": {
-      "site_name": "YouTube",
-      "url": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
-      "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
-      "image": "https://i.ytimg.com/vi/bwN9WP1CBi0/maxresdefault.jpg",
-      "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
-      "type": "video.other",
-      "video:url": "http://www.youtube.com/v/bwN9WP1CBi0?version=3&amp;autohide=1",
-      "video:secure_url": "https://www.youtube.com/v/bwN9WP1CBi0?version=3&amp;autohide=1",
-      "video:type": "application/x-shockwave-flash",
-      "video:width": "1280",
-      "video:height": "720",
-      "video:tag": "Publicité"
-    },
-    "twitter": {
-      "card": "player",
-      "site": "@youtube",
-      "url": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
-      "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
-      "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
-      "image": "https://i.ytimg.com/vi/bwN9WP1CBi0/maxresdefault.jpg",
-      "app:name:iphone": "YouTube",
-      "app:id:iphone": "544007664",
-      "app:name:ipad": "YouTube",
-      "app:id:ipad": "544007664",
-      "app:url:iphone": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
-      "app:url:ipad": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
-      "app:name:googleplay": "YouTube",
-      "app:id:googleplay": "com.google.android.youtube",
-      "app:url:googleplay": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
-      "player": "https://www.youtube.com/embed/bwN9WP1CBi0",
-      "player:width": "1280",
-      "player:height": "720"
-    },
-    "otherMeta": {
-      "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
-      "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
-      "keywords": "Joueur du grenier, bazar du grenier, Hors-série, Humour, Publicité",
-      "theme-color": "#ff0000",
-      "al:ios:app_store_id": "544007664",
-      "al:ios:app_name": "YouTube",
-      "al:ios:url": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
-      "al:android:url": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
-      "al:android:app_name": "YouTube",
-      "al:android:package": "com.google.android.youtube",
-      "al:web:url": "https://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
-      "fb:app_id": "87741124305"
-    },
-    "misc": {
-      "title": "Joueur du Grenier - Hors-série - Les publicités 2 ! - YouTube",
-      "locale": "fr",
-      "icon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico"
-    }
+  "og": {
+    "site_name": "YouTube",
+    "url": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
+    "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
+    "image": "https://i.ytimg.com/vi/bwN9WP1CBi0/maxresdefault.jpg",
+    "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
+    "type": "video.other",
+    "video:url": "http://www.youtube.com/v/bwN9WP1CBi0?version=3&amp;autohide=1",
+    "video:secure_url": "https://www.youtube.com/v/bwN9WP1CBi0?version=3&amp;autohide=1",
+    "video:type": "application/x-shockwave-flash",
+    "video:width": "1280",
+    "video:height": "720",
+    "video:tag": "Publicité"
   },
-  "time": 587
+  "twitter": {
+    "card": "player",
+    "site": "@youtube",
+    "url": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
+    "title": "Joueur du Grenier - Hors-série - Les publicités 2 !",
+    "description": "Nouvel hors-série du grenier et on retourne faire un tour du coté des publicités d&#39;antan ! J&#39;espère que ca vous plaira ! Bon visionnage et oubliez pas de vou...",
+    "image": "https://i.ytimg.com/vi/bwN9WP1CBi0/maxresdefault.jpg",
+    "app:name:iphone": "YouTube",
+    "app:id:iphone": "544007664",
+    "app:name:ipad": "YouTube",
+    "app:id:ipad": "544007664",
+    "app:url:iphone": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
+    "app:url:ipad": "vnd.youtube://www.youtube.com/watch?v=bwN9WP1CBi0&amp;feature=applinks",
+    "app:name:googleplay": "YouTube",
+    "app:id:googleplay": "com.google.android.youtube",
+    "app:url:googleplay": "https://www.youtube.com/watch?v=bwN9WP1CBi0",
+    "player": "https://www.youtube.com/embed/bwN9WP1CBi0",
+    "player:width": "1280",
+    "player:height": "720"
+  },
+  "initialUrl": "https://youtu.be/bwN9WP1CBi0",
+  "time": 575
 }

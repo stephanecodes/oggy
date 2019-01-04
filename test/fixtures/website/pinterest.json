@@ -1,5 +1,4 @@
 {
-  "initialUrl": "https://www.pinterest.fr/pinterest/pin-tips/",
   "oggyfied": {
     "title": "Pin Tips",
     "description": "Tips and tricks for using Pinterest, straight from the source.",
@@ -10,57 +9,28 @@
     "icon": "https://s.pinimg.com/webapp/style/images/logo_trans_144x144-642179a1.png",
     "locale": "en"
   },
-  "metadata": {
-    "og": {
-      "site_name": "Pinterest",
-      "description": "Tips and tricks for using Pinterest, straight from the source.",
-      "image": "https://i.pinimg.com/custom_covers/200x150/424605139807011420_1481154025.jpg",
-      "title": "Pin Tips",
-      "type": "pinterestapp:pinboard",
-      "updated_time": "2018-07-10 17:06:55+00:00",
-      "url": "https://www.pinterest.com/pinterest/pin-tips/"
-    },
-    "twitter": {
-      "app:android": "com.pinterest",
-      "app:id:ipad": "429047995",
-      "app:id:iphone": "429047995",
-      "app:url:googleplay": "pinterest://board/pinterest/pin-tips",
-      "app:url:ipad": "pinterest://board/pinterest/pin-tips",
-      "app:url:iphone": "pinterest://board/pinterest/pin-tips",
-      "card": "summary_large_image",
-      "description": "Tips and tricks for using Pinterest, straight from the source.",
-      "image:src": "https://i.pinimg.com/custom_covers/200x150/424605139807011420_1481154025.jpg",
-      "site": "@pinterest",
-      "title": "Pin Tips"
-    },
-    "otherMeta": {
-      "viewport": "width=device-width, initial-scale=1",
-      "application-name": "Pinterest",
-      "msapplication-tilecolor": "#ffffff",
-      "msapplication-tileimage": "https://s.pinimg.com/webapp/style/images/logo_trans_144x144-642179a1.png",
-      "referrer": "origin",
-      "fb:app_id": "274266067164",
-      "al:android:app_name": "Pinterest",
-      "al:android:package": "com.pinterest",
-      "al:android:url": "pinterest://board/pinterest/pin-tips",
-      "al:ios:app_name": "Pinterest",
-      "al:ios:app_store_id": "429047995",
-      "al:ios:url": "pinterest://board/pinterest/pin-tips",
-      "description": "Tips and tricks for using Pinterest, straight from the source. | See more ideas about Pinterest marketing, Pinterest blog and Social media marketing.",
-      "followers": "578584",
-      "landing_page_info": "{&#39;board_id&#39;: None}",
-      "naver-site-verification": "449f5675319d27f34f90dc99f63f1892389589fc",
-      "pinterest": "nohover",
-      "pinterestapp:category": "products",
-      "pinterestapp:pinner": "https://www.pinterest.com/pinterest/",
-      "pinterestapp:pins": "46",
-      "theme-color": "#e60023"
-    },
-    "misc": {
-      "title": "46 best Pin Tips images on Pinterest | Pinterest marketing, Pinterest blog and Social media marketing",
-      "locale": "en",
-      "icon": "https://s.pinimg.com/webapp/style/images/logo_trans_144x144-642179a1.png"
-    }
+  "og": {
+    "site_name": "Pinterest",
+    "description": "Tips and tricks for using Pinterest, straight from the source.",
+    "image": "https://i.pinimg.com/custom_covers/200x150/424605139807011420_1481154025.jpg",
+    "title": "Pin Tips",
+    "type": "pinterestapp:pinboard",
+    "updated_time": "2018-07-10 17:06:55+00:00",
+    "url": "https://www.pinterest.com/pinterest/pin-tips/"
   },
-  "time": 850
+  "twitter": {
+    "app:android": "com.pinterest",
+    "app:id:ipad": "429047995",
+    "app:id:iphone": "429047995",
+    "app:url:googleplay": "pinterest://board/pinterest/pin-tips",
+    "app:url:ipad": "pinterest://board/pinterest/pin-tips",
+    "app:url:iphone": "pinterest://board/pinterest/pin-tips",
+    "card": "summary_large_image",
+    "description": "Tips and tricks for using Pinterest, straight from the source.",
+    "image:src": "https://i.pinimg.com/custom_covers/200x150/424605139807011420_1481154025.jpg",
+    "site": "@pinterest",
+    "title": "Pin Tips"
+  },
+  "initialUrl": "https://www.pinterest.fr/pinterest/pin-tips/",
+  "time": 642
 }

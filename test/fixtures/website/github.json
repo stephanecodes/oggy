@@ -1,5 +1,4 @@
 {
-  "initialUrl": "https://github.com/sindresorhus",
   "oggyfied": {
     "title": "sindresorhus - Overview",
     "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus",
@@ -10,49 +9,15 @@
     "icon": "https://github.com/fluidicon.png",
     "locale": "en"
   },
-  "metadata": {
-    "og": {
-      "image": "https://avatars3.githubusercontent.com/u/170270?s=400&amp;v=4",
-      "site_name": "GitHub",
-      "type": "profile",
-      "title": "sindresorhus - Overview",
-      "url": "https://github.com/sindresorhus",
-      "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus"
-    },
-    "twitter": {},
-    "otherMeta": {
-      "viewport": "width=device-width",
-      "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus",
-      "fb:app_id": "1401488693436528",
-      "profile:username": "sindresorhus",
-      "pjax-timeout": "1000",
-      "request-id": "E9EC:3B59:2093C9:420549:5C2E1819",
-      "google-site-verification": "GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc",
-      "octolytics-host": "collector.githubapp.com",
-      "octolytics-app-id": "github",
-      "octolytics-event-url": "https://collector.githubapp.com/github-external/browser_event",
-      "octolytics-dimension-request_id": "E9EC:3B59:2093C9:420549:5C2E1819",
-      "octolytics-dimension-region_edge": "iad",
-      "octolytics-dimension-region_render": "iad",
-      "analytics-location": "/&lt;user-name&gt;",
-      "google-analytics": "UA-3769691-2",
-      "dimension1": "Logged Out",
-      "hostname": "github.com",
-      "expected-hostname": "github.com",
-      "js-proxy-site-detection-payload": "OTc5M2MzMjFiYWE0MDkzZGY3YzI2NGNhNGIxNWNkNDk1ODUwZTU5NDc5YWQ5NGQ0NDgzMzNhYTQ1ODQwYmQwZXx7InJlbW90ZV9hZGRyZXNzIjoiMTc4LjIzLjE1Mi4xMzIiLCJyZXF1ZXN0X2lkIjoiRTlFQzozQjU5OjIwOTNDOTo0MjA1NDk6NUMyRTE4MTkiLCJ0aW1lc3RhbXAiOjE1NDY1MjQ2OTgsImhvc3QiOiJnaXRodWIuY29tIn0=",
-      "enabled-features": "DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR",
-      "html-safe-nonce": "46f3af2a5d3f45307c57a3c6f11391ff31e6b20f",
-      "octolytics-dimension-user_id": "170270",
-      "octolytics-dimension-user_login": "sindresorhus",
-      "browser-stats-url": "https://api.github.com/_private/browser/stats",
-      "browser-errors-url": "https://api.github.com/_private/browser/errors",
-      "theme-color": "#1e2327"
-    },
-    "misc": {
-      "title": "sindresorhus (Sindre Sorhus) · GitHub",
-      "locale": "en",
-      "icon": "https://github.com/fluidicon.png"
-    }
+  "og": {
+    "image": "https://avatars3.githubusercontent.com/u/170270?s=400&amp;v=4",
+    "site_name": "GitHub",
+    "type": "profile",
+    "title": "sindresorhus - Overview",
+    "url": "https://github.com/sindresorhus",
+    "description": "Maker · Full-Time Open-Sourcerer · Into Swift and Node.js - sindresorhus"
   },
+  "twitter": {},
+  "initialUrl": "https://github.com/sindresorhus",
   "time": 1275
 }

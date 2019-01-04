@@ -1,23 +1,12 @@
 {
-  "initialUrl": "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna",
   "oggyfied": {
     "title": "Wikipedia, wolna encyklopedia",
     "siteName": "pl.wikipedia.org",
     "icon": "https://pl.wikipedia.org/static/apple-touch/wikipedia.png",
     "locale": "pl"
   },
-  "metadata": {
-    "og": {},
-    "twitter": {},
-    "otherMeta": {
-      "generator": "MediaWiki 1.33.0-wmf.9",
-      "referrer": "origin-when-cross-origin"
-    },
-    "misc": {
-      "title": "Wikipedia, wolna encyklopedia",
-      "locale": "pl",
-      "icon": "https://pl.wikipedia.org/static/apple-touch/wikipedia.png"
-    }
-  },
-  "time": 165
+  "og": {},
+  "twitter": {},
+  "initialUrl": "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna",
+  "time": 230
 }

@@ -1,5 +1,4 @@
 {
-  "initialUrl": "https://www.frandroid.com/marques/microsoft/557631_sabotage-google-est-accuse-davoir-plombe-micosoft-edge",
   "oggyfied": {
     "title": "Sabotage : Google est accusé d'avoir plombé Micosoft Edge - FrAndroid",
     "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
@@ -10,50 +9,27 @@
     "icon": "https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/frandroid/frandroid-512.png",
     "locale": "fr_FR"
   },
-  "metadata": {
-    "og": {
-      "locale": "fr_FR",
-      "type": "article",
-      "title": "Sabotage : Google est accusé d&#039;avoir plombé Micosoft Edge - FrAndroid",
-      "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
-      "url": "https://www.frandroid.com/marques/microsoft/557631_sabotage-google-est-accuse-davoir-plombe-micosoft-edge",
-      "site_name": "FrAndroid",
-      "updated_time": "2018-12-18T13:15:52+01:00",
-      "image": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
-      "image:secure_url": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
-      "image:width": "1804",
-      "image:height": "1104"
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
-      "title": "Sabotage : Google est accusé d&#039;avoir plombé Micosoft Edge - FrAndroid",
-      "site": "@twandroid",
-      "image": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
-      "creator": "@OmarBelkaab"
-    },
-    "otherMeta": {
-      "viewport": "width=device-width, initial-scale=1, user-scalable=yes",
-      "theme-color": "#9ed44b",
-      "apple-itunes-app": "873050791",
-      "news_keyword": "Android, Applications Android, Culture tech, Google Apps, Marques, Microsoft, Google Chrome, Microsoft Edge, Navigateur",
-      "msapplication-tileimage": "https://images.frandroid.com/wp-content/uploads/2016/02/cropped-untitled-1-2-270x270.png",
-      "msapplication-tilecolor": "#9ed44b",
-      "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
-      "article:publisher": "https://www.facebook.com/frandroidcom",
-      "article:tag": "Navigateur",
-      "article:section": "Microsoft",
-      "article:published_time": "2018-12-18T13:15:52+01:00",
-      "article:modified_time": "2018-12-18T13:15:52+01:00",
-      "fb:pages": "31928183984",
-      "ia:markup_url": "https://www.frandroid.com/marques/microsoft/557631_sabotage-google-est-accuse-davoir-plombe-micosoft-edge?ia_markup=1",
-      "author": "Omar Belkaab"
-    },
-    "misc": {
-      "title": "Sabotage : Google est accusé d&#039;avoir plombé Micosoft Edge - FrAndroid",
-      "locale": "fr-FR",
-      "icon": "https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/frandroid/frandroid-512.png"
-    }
+  "og": {
+    "locale": "fr_FR",
+    "type": "article",
+    "title": "Sabotage : Google est accusé d&#039;avoir plombé Micosoft Edge - FrAndroid",
+    "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
+    "url": "https://www.frandroid.com/marques/microsoft/557631_sabotage-google-est-accuse-davoir-plombe-micosoft-edge",
+    "site_name": "FrAndroid",
+    "updated_time": "2018-12-18T13:15:52+01:00",
+    "image": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
+    "image:secure_url": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
+    "image:width": "1804",
+    "image:height": "1104"
   },
-  "time": 150
+  "twitter": {
+    "card": "summary_large_image",
+    "description": "Il y a quelques années, Microsoft mettait fin à son navigateur Internet Explorer trop lent, trop dépassé. Son remplaçant, Edge, avait pour mission de",
+    "title": "Sabotage : Google est accusé d&#039;avoir plombé Micosoft Edge - FrAndroid",
+    "site": "@twandroid",
+    "image": "https://images.frandroid.com/wp-content/uploads/2018/12/microsoft-edge-vs-google-chrome.jpg",
+    "creator": "@OmarBelkaab"
+  },
+  "initialUrl": "https://www.frandroid.com/marques/microsoft/557631_sabotage-google-est-accuse-davoir-plombe-micosoft-edge",
+  "time": 129
 }

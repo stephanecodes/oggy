@@ -1,5 +1,4 @@
 {
-  "initialUrl": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections",
   "oggyfied": {
     "title": "Fans beg Kim Zolciak to lay off the lip injections",
     "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
@@ -8,50 +7,22 @@
     "url": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections",
     "type": "article"
   },
-  "metadata": {
-    "og": {
-      "title": "Fans beg Kim Zolciak to lay off the lip injections",
-      "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
-      "type": "article",
-      "image": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/kim20zolciak20nbc.jpg",
-      "url": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections",
-      "site_name": "Fox News"
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@foxnews",
-      "title": "Fans beg Kim Zolciak to lay off the lip injections",
-      "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
-      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/0/0/kim20zolciak20nbc.jpg?ve=1&amp;tl=1",
-      "url": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections"
-    },
-    "otherMeta": {
-      "viewport": "width=device-width, minimum-scale=1.0, initial-scale=1.0",
-      "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
-      "prism.channel": "fnc",
-      "prism.section": "entertainment",
-      "prism.aggregationtype": "subsection",
-      "pagetype": "article",
-      "content-creator": "tiger",
-      "dc.creator": "Jessica Sager",
-      "dc.title": "Fans beg Kim Zolciak to lay off the lip injections",
-      "dcterms.abstract": "Fans are begging Kim Zolciak to lay off the lip fillers.",
-      "dc.type": "Text.Article",
-      "dc.description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
-      "dc.language": "en-US",
-      "dc.publisher": "Fox News",
-      "dc.format": "text/html",
-      "dc.identifier": "urn:uri:base64:da7523b1-13f0-5204-a259-42371382a480",
-      "dc.source": "Fox News",
-      "dc.date": "2018-12-18",
-      "dcterms.created": "2018-12-18T11:32:59-05:00",
-      "dcterms.modified": "2018-12-24T09:48:40-05:00",
-      "robots": "noarchive, noodp",
-      "fb:app_id": "116027085089150",
-      "classification": "/FOX NEWS/ENTERTAINMENT/GENRES/Reality,/FOX NEWS/ENTERTAINMENT,/FOX NEWS/ENTERTAINMENT/Celebrity News",
-      "classification-isa": "reality,entertainment,celebrity"
-    },
-    "misc": {}
+  "og": {
+    "title": "Fans beg Kim Zolciak to lay off the lip injections",
+    "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
+    "type": "article",
+    "image": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/kim20zolciak20nbc.jpg",
+    "url": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections",
+    "site_name": "Fox News"
   },
-  "time": 1180
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@foxnews",
+    "title": "Fans beg Kim Zolciak to lay off the lip injections",
+    "description": "Fans are begging Kim Zolciak to lay off the lip fillers.",
+    "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/0/0/kim20zolciak20nbc.jpg?ve=1&amp;tl=1",
+    "url": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections"
+  },
+  "initialUrl": "https://www.foxnews.com/entertainment/fans-beg-kim-zolciak-to-lay-off-the-lip-injections",
+  "time": 775
 }

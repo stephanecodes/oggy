@@ -1,18 +1,11 @@
 {
-  "initialUrl": "https://www.mi.com/th/",
   "oggyfied": {
     "title": "Mi Thailand",
     "siteName": "mi.com",
     "locale": "en-TH"
   },
-  "metadata": {
-    "og": {},
-    "twitter": {},
-    "otherMeta": {},
-    "misc": {
-      "title": "  Mi Thailand",
-      "locale": "en-TH"
-    }
-  },
-  "time": 741
+  "og": {},
+  "twitter": {},
+  "initialUrl": "https://www.mi.com/th/",
+  "time": 330
 }

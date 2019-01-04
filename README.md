@@ -25,7 +25,7 @@ const oggy = require('oggy');
 (async () => {
 
 	const scraper = oggy();
-	const res = await scraper.scrape('http://ogp.me/');
+	const res = await scraper.scrape('https://octoverse.github.com/');
 
 	// => res = {initialUrl: "...", oggyfied: {...}, og: {...}, twitter: {...}}
 	// => res = {initialUrl: "...", error: {...}} if an error occurs
