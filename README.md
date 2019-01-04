@@ -154,27 +154,19 @@ module.exports = () => {
 In this case, the user's token is available in the context only if the url is on the same domain.
 
 ```js
-const oggy = require('oggy');
-const hook = require './hooks/user-token';
+const hook = userTokenHook();
+const scraper = oggy({hooks: [hook]);
 
-(async () => {
+let urls = [/*...*/]
 
-	const scraper = oggy({hooks: [hook()]);
-
-	let urls = [/*...*/]
-
-	urls.forEach(url => {
-		let options = {};
-		// Ensure url is on same domain
-		if(isSameDomainUrl(url)) {
-			options.context = {userToken: getUserToken()};
-		}
-		const res = await scraper.scrape(url, options);
-	});
-
-
-})();
-
+urls.forEach(url => {
+	let options = {};
+	// Ensure url is on same domain
+	if(isSameDomainUrl(url)) {
+		options.context = {userToken: getUserToken()};
+	}
+	const res = await scraper.scrape(url, options);
+});
 
 ```
 
