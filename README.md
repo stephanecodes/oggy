@@ -183,4 +183,4 @@ const hook = require './hooks/user-token';
 
 ## License
 
-MIT © [Stephane Janicaud](https://github.com/stephanecodes)
+MIT
