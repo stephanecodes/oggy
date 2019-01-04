@@ -17,7 +17,6 @@ module.exports = (options = {}) => {
 			requestTimeout: 5000,
 			requiredProps: [],
 			exclusions: [],
-			metadata: false,
 			hooks: []
 		}
 	};
@@ -101,7 +100,6 @@ module.exports = (options = {}) => {
 				props[prop] = props[prop].replace(/\r+|\n+/g, '. ').trim();
 			}
 		}
-		return props;
 	};
 
 	// Clean host name by removing `www`
@@ -293,7 +291,7 @@ module.exports = (options = {}) => {
 	// Scrape one url
 	const scrape = async (url, context) => {
 		try {
-			let time = Date.now(); // Start timer
+			const time = Date.now(); // Start timer
 
 			assertUrlIsNotMalformed(url);
 			assertUrlIsAllowed(url);
@@ -309,10 +307,10 @@ module.exports = (options = {}) => {
 				hooks: {
 					beforeRequest: [
 						options => {
-							// Call internal hooks for this url
+							// Call hooks matching this url
 							oggyHooks.forEach(hook => {
-								if (hook.beforeScrapeUrl) {
-									hook.beforeScrapeUrl(options.headers, context);
+								if (hook.beforeRequest) {
+									hook.beforeRequest(options.headers, context);
 								}
 							});
 						}
@@ -324,25 +322,23 @@ module.exports = (options = {}) => {
 
 			const body = res.body || '';
 			const metadata = parse(body, urlObject);
-			let oggyfied = fusion(metadata, urlObject);
+			const oggyfied = fusion(metadata, urlObject);
+			const result = {oggyfied, og: metadata.og, twitter: metadata.twitter};
 
 			oggyHooks.forEach(hook => {
-				if (hook.afterScrapeUrl) {
+				if (hook.beforeResponse) {
 					const content = {url: urlObject, body, metadata, headers: res.headers};
-					hook.afterScrapeUrl(oggyfied, content, context);
+					hook.beforeResponse(result, content, context);
 				}
 			});
 
-			oggyfied = cleanup(oggyfied);
+			cleanup(result.oggyfied);
+			assertComplete(result.oggyfied);
 
-			assertComplete(oggyfied);
+			result.initialUrl = url;
+			result.time = Date.now() - time; // Stop timer;
 
-			time = Date.now() - time; // Stop timer
-
-			if (oggyOptions.metadata === true) {
-				return {initialUrl: url, oggyfied, metadata, time};
-			}
-			return {initialUrl: url, oggyfied, time};
+			return result;
 		} catch (err) {
 			return {initialUrl: url, error: {message: err.message}};
 		}
