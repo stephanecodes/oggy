@@ -44,6 +44,45 @@ Type: `Object`
 
 ### oggy.scrape(url, [options])
 
+Returns Open Graph, Twitter and Oggyfied metadata.
+
+- **oggyfied** - Type: `Object` - Unified metadata
+- **og** - Type: `Object` - Open Graph metadata
+- **twitter** - Type: `Object` - Twitter metadata
+- **initialUrl** - Type: `String` - The initial url
+- **time** - Type: `Long` - Scrape duration in milliseconds
+- **error** - Type: `Object` - If an error occurs (metadata won't be available)
+
+
+
+```json
+{
+  "oggyfied": {
+    "title": "The State of the Octoverse",
+    "description": "The State of the Octoverse reflects on 2018 so far, teamwork across time zones, and 1.1 billion contributions.",
+    "siteName": "The State of the Octoverse",
+    "image": "https://octoverse.github.com/assets/images/social-card.png",
+    "url": "https://octoverse.github.com/",
+    "locale": "en_US"
+  },
+  "og": {
+    "title": "The State of the Octoverse",
+    "locale": "en_US",
+    "description": "The State of the Octoverse reflects on 2018 so far, teamwork across time zones, and 1.1 billion contributions.",
+    "url": "https://octoverse.github.com/",
+    "site_name": "The State of the Octoverse",
+    "image": "https://octoverse.github.com/assets/images/social-card.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@github"
+  },
+  "initialUrl": "https://octoverse.github.com/",
+  "time": 245
+}
+```
+
+
 #### url
 
 Type: `string`
