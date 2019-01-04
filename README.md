@@ -27,7 +27,8 @@ const oggy = require('oggy');
 	const scraper = oggy();
 	const res = await scraper.scrape('http://ogp.me/');
 
-	// => res = {oggyfied: {...}, og: {...}, twitter: {...}}
+	// => res = {initialUrl: "...", oggyfied: {...}, og: {...}, twitter: {...}}
+	// => res = {initialUrl: "...", error: {...}} if an error occurs
 
 })();
 ```
