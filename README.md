@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="media/logo.gif" width="300">
+	<img src="media/logo.gif">
 	<br>
 	<br>
 </p>
@@ -27,7 +27,7 @@ const oggy = require('oggy');
 	const scraper = oggy();
 	const res = await scraper.scrape('http://ogp.me/');
 
-	// => res.oggyfied = {}
+	// => res = {oggyfied: {...}, og: {...}, twitter: {...}}
 
 })();
 ```
@@ -41,7 +41,7 @@ const oggy = require('oggy');
 
 Type: `Object`
 
-### scraper.scrape(url, [options])
+### oggy.scrape(url, [options])
 
 #### url
 
@@ -53,40 +53,91 @@ The url to scrape.
 
 Type: `Object`
 
-##### user
+##### context
 
 Type: `Object`<br>
 Default: `{}`
 
-Optional object with user profile.
-Useful for some hooks. For example, adding some user information to request headers.
+An optional context available inside `hook.beforeRequest` and `hook.beforeResponse`.
+
+Be careful not to put sensitive data in this context unless you know what you're doing.
 
 
 ## Hooks
 
+Hooks allow to modify request headers and change returned metadata.
+
 ```js
-module.exports = () => {
-	const name = 'oggy-hook';
+module.exports = (options) => {
+	const name = 'captain-hook';
 
 	const handleUrl = url => {
 		// Check if hook handles this url
 		return /stephanecodes/.test(url.hostname);
 	};
 
-	const beforeScrapeUrl = (headers, context) => {
+	const beforeRequest = (headers, context) => {
 		// Add or override request headers
 	};
 
-	const afterScrapeUrl = (oggyfied, content, context) => {
-		// Override oggyfied metada or do something with it
-		// You also have access to initial url, content body and all parsed metadata
+	const beforeResponse = (result, content, context) => {
+		// Override result or do something with it
+		// You also have access to initial url, content body, all parsed metadata.
 	};
 
-	return {name, handleUrl, beforeScrapeUrl, afterScrapeUrl};
+	return {name, handleUrl, beforeRequest, beforeResponse};
 };
+```
+
+### Use cases
+
+#### Forward a token
+
+This hook will add a header with current user login to every request.
+
+```js
+module.exports = () => {
+
+	const name = 'add-user-token';
+
+	const handleUrl = url => true;
+
+	const beforeRequest = (headers, context) => {
+		if(context.userToken) {
+			headers['x-user-token'] = context.userToken;
+		}
+	};
+
+	return {name, handleUrl, beforeRequest};
+};
+```
+In this case, the user's token is available in the context only if the url is on the same domain.
+
+```js
+const oggy = require('oggy');
+const hook = require './hooks/user-token';
+
+(async () => {
+
+	const scraper = oggy({hooks: [hook()]);
+
+	let urls = [/*...*/]
+
+	urls.forEach(url => {
+		let options = {};
+		// Ensure url is on same domain
+		if(isSameDomainUrl(url)) {
+			options.context = {userToken: getUserToken()};
+		}
+		const res = await scraper.scrape(url, options);
+	});
+
+
+})();
 
 
 ```
+
 
 
 
