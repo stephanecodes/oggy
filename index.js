@@ -288,6 +288,12 @@ module.exports = (options = {}) => {
 		return oggyOptions.hooks.filter(hook => hook.handleUrl(urlObject));
 	};
 
+	// Returns true if at least one hook handles the url
+	const urlIsHooked = url => {
+		const urlObject = URL.parse(url, false, true);
+		return oggyOptions.hooks.some(hook => hook.handleUrl(urlObject));
+	};
+
 	// Scrape one url
 	const scrape = async (url, options) => {
 		try {
@@ -351,5 +357,5 @@ module.exports = (options = {}) => {
 		return Promise.all(promises);
 	};
 
-	return {defaults, scrape, scrapeAll};
+	return {defaults, scrape, scrapeAll, urlIsHooked};
 };
