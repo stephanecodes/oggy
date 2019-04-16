@@ -1,6 +1,6 @@
 {
 	"name": "oggy",
-	"version": "0.0.0",
+	"version": "0.2.0",
 	"description": "Scrape and fusion Open Graph, Twitter and other DOM metadata easily",
 	"license": "MIT",
 	"repository": "stephanecodes/oggy",
@@ -34,7 +34,7 @@
 		"lodash": "^4.17.11"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
+		"ava": "^1.4.1",
 		"coveralls": "^3.0.2",
 		"nock": "^10.0.4",
 		"nyc": "^13.1.0",
