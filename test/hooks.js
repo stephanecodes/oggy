@@ -3,6 +3,20 @@ import oggy from '..';
 import sampleHook from '../hooks/sample';
 import fixtures from './fixtures';
 
+test('url is hooked', async t => {
+	const scraper = oggy({hooks: [sampleHook()]});
+	const res = await scraper.urlIsHooked(fixtures.defaults.url);
+
+	t.true(res);
+});
+
+test('url is not hooked', async t => {
+	const scraper = oggy({hooks: [sampleHook()]});
+	const res = await scraper.urlIsHooked('https://www.bttf.com');
+
+	t.false(res);
+});
+
 test('change metadata title', async t => {
 	const scraper = oggy({hooks: [sampleHook()]});
 	const fixture = fixtures.use('boilerplate.basic');
